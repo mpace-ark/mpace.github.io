@@ -5,8 +5,8 @@
 <title>BT Ark Data Centres - Process Flowchart</title>
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK|Open+Sans|Raleway&display=swap" rel="stylesheet">
 <style type="text/css">
- /* Font stuff */
-	
+ /* Font import from Google / Adobe */
+
 	@import url("https://p.typekit.net/p.css?s=1&k=lfm2kpt&ht=tk&f=5622.5624.5626.5736.5738.5661.5663&a=10465470&app=typekit&e=css");
 
 		@font-face {
@@ -54,14 +54,15 @@
 		.tk-p22-underground { font-family: "p22-underground",sans-serif; }
 		.tk-p22-underground-pc { font-family: "p22-underground-pc",sans-serif; }
 		.tk-p22-underground-sc { font-family: "p22-underground-sc",sans-serif; }
-	
+
 	</style>
 <style type="text/css">
-	
+
+	/* This is the CSS written by me - Max Pace 26 Jun 2019 */
 	body {
 		font-family:'P22UndergroundMedium','Noto Sans HK', 'Raleway', sans-serif;
 	}
-	
+
 	.Popup{
 		min-height: 150px;
 		height: auto;
@@ -81,9 +82,9 @@
 		padding-left: 12px!important;
 		text-align: left;
 		font-weight: normal!important;
-		display: none; 
+		display: none;
 	}
-	
+	/* Animation CSS - Browser compatible */
 	@keyframes appear {
 		from{
 			opacity: 0;
@@ -100,7 +101,7 @@
 			visibility: visible;
 		}
 	}
-	
+
 	@keyframes disappear {
 		from{
 			opacity: 1;
@@ -117,8 +118,8 @@
 			visibility: hidden;
 		}
 	}
-	
-	
+
+
 	@-webkit-keyframes appear {
 		from{
 			opacity: 0;
@@ -135,7 +136,7 @@
 			visibility: visible;
 		}
 	}
-	
+
 	@-moz-keyframes disappear {
 		from{
 			opacity: 1;
@@ -152,23 +153,6 @@
 			visibility: hidden;
 		}
 	}
-	
-	@-o-keyframes disappear {
-		from{
-			opacity: 1;
-			visibility: visible;
-			display:block;
-		}
-		90% {
-			opacity = 0.9;
-			visibility: visible;
-			display: block;
-		}
-		to {
-			opacity: 0;
-			visibility: hidden;
-		}
-	}
 
 	@-o-keyframes disappear {
 		from{
@@ -187,6 +171,23 @@
 		}
 	}
 
+	@-o-keyframes disappear {
+		from{
+			opacity: 1;
+			visibility: visible;
+			display:block;
+		}
+		90% {
+			opacity = 0.9;
+			visibility: visible;
+			display: block;
+		}
+		to {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	/* Popup CSS - there must be a smarter way to deal with this. */
 	.PopupTitle{
 		font-weight: bold;
 		padding-left:5px;
@@ -311,7 +312,7 @@
 		opacity: 0;
 		visibility: "hidden";
 	}
-	
+
 	.st1{
 		 -webkit-transition: all 900ms ease;
         -moz-transition: all 900ms ease;
@@ -338,24 +339,24 @@
         -moz-transition: all 900ms ease;
         -ms-transition: all 900ms ease;
         -o-transition: all 900ms ease;
-        transition: all 900ms ease;		
+        transition: all 900ms ease;
 	}
 	.st5{
 		 -webkit-transition: all 900ms ease;
         -moz-transition: all 900ms ease;
         -ms-transition: all 900ms ease;
         -o-transition: all 900ms ease;
-        transition: all 900ms ease;		
+        transition: all 900ms ease;
 	}
 	.st6{
 		 -webkit-transition: all 1000ms ease;
         -moz-transition: all 1000ms ease;
         -ms-transition: all 1000ms ease;
         -o-transition: all 1000ms ease;
-        transition: all 1000ms ease;		
+        transition: all 1000ms ease;
 	}
-	/* The following is autocreated by the SVG Editor*/
-	
+	/* The following is autocreated by the SVG Editor, Adobe Illustrator CC */
+
 .st0{fill:#FFFFFF; animation: stroke 1s; animation-iteration-count: infinite;}
 	.st1{fill:none;stroke:#974956;stroke-width:4;stroke-miterlimit:10;}
 	.st2{fill:none;stroke:#8A9455;stroke-width:4;stroke-miterlimit:10;}
@@ -370,65 +371,66 @@
 	.st10{font-family:'P22UndergroundMedium','Noto Sans HK', 'Raleway', sans-serif; font-weight:  bold;}
 	.st12{font-size:15px;}
 	.st13{fill:none;stroke:#54B3E9;stroke-miterlimit:10;}
-	
+
+	/* Very basic Responsive CSS - I can't rework everything for mobile for the time being */
 @media (max-width: 920px){
-	
-	.everything   {display: none !important;} 
+
+	.everything   {display: none !important;}
 	#Overlay{display:none!important;}
 	.small-screen {display:block!important;}
-	
+
 }
 
 @media (min-width : 918px ){
 	.small-screen {display:none!important;}
 }
 </style>
-	
+
 </head>
 
 <body>
-		
+		<!-- This is the HTML for all the popups - again there must be a smarter way to deal with this. -->
 	<span id="Overlay">
-		
+
 	<span class="Popup BookStorage">
 		<div class="PopupTitle">Book Storage</div>
 			<div class="PopupContent">Book through <a href="mailto:ah.support@bt.com">AH.Support@bt.com</a>. A minimum of 24 hours advanced notification is required. Secure cages are offered on a first come first served basis. <br>
 			For more details, see <em>“BT Telehousing Customer Welcome Pack ARK”</em>, <strong>10. Deliveries</strong></div>
 		</span>
-		
+
 	<span class="Popup BookDeliveries">
 		<div class="PopupTitle">Book Deliveries</div>
 			<div class="PopupContent">Book through <a href="mailto:ah.support@bt.com">AH.Support@bt.com</a>. A minimum of 48 hours of advanced notification is required. One of your representatives must be present to receive the goods, or a Remote Hands request must be submitted in advance. <br>
 			For more details, see <em>“BT Telehousing Customer Welcome Pack ARK”</em>, <strong>5. Deliveries</strong></div>
 		</span>
-		
+
 	<span class="Popup BTArkDataCentres">
 		<div class="PopupTitle">BT - Ark Data Centres</div>
 			<div class="PopupContent">Ark sites comprise part of the BT Strategic Data Centre Portfolio. Namely, Ark Cody Park, in Farnborough and Ark Spring Park, in Corsham.</div>
 	</span>
-		
+
 		<span class="Popup ContractSigned">
 		<div class="PopupTitle">Contract Signed</div>
 			<div class="PopupContent">
-				Congratulations, you are about to install your IT equipment in some of the most advanced Data Centres in the UK! 
+				Congratulations, you are about to install your IT equipment in some of the most advanced Data Centres in the UK!
 				Click on every stop to learn more about each part of the process
 			</div>
 		</span>
-		
+
 	<span class="Popup InstallRacks">
 		<div class="PopupTitle">Install Racks</div>
 			<div class="PopupContent">
 					Once your order has been delivered your racks will be available for you to access and begin your installation. If you have additional fit-out requirements please contact your BT Account Manager
 			</div>
 		</span>
-		
+
 	<span class="Popup InstallTapoff">
 		<div class="PopupTitle">Install TapOff / PDU</div>
 			<div class="PopupContent">
 					Once your order has been delivered your racks will be available for you to access and begin your installation. If you have additional fit-out requirements please contact your BT Account Manager
 			</div>
 		</span>
-		
+
 		<span class="Popup InstallActiveEquipment">
 		<div class="PopupTitle">Install Active Equipment</div>
 			<div class="PopupContent">
@@ -438,7 +440,7 @@
 
 			</div>
 		</span>
-		
+
 		<span class="Popup CablingBetween">
 		<div class="PopupTitle">Cabling in and between Racks</div>
 			<div class="PopupContent">
@@ -447,21 +449,21 @@
 					Please note a Declaration of Performance “DOP” must be presented to the data centre when you are delivering and installing your cabling
 			</div>
 		</span>
-		
+
 		<span class="Popup CrossConnects">
 		<div class="PopupTitle">Cross Connects <br/> and other Services</div>
 			<div class="PopupContent">
 				Cross Connects prices are determined on an Order by Order basis dependent on the scope of your requirements. Please contact your BT Account Manager for further details
 			</div>
 		</span>
-		
+
 				<span class="Popup WhiteListManagement">
 		<div class="PopupTitle">White List Management</div>
 			<div class="PopupContent">
-				Your access to the data centre and ability to request deliveries and additional visitors is managed and maintained via your BT Customer Whitelist. <br/><br/>The Whitelist is created and managed by you and the BT Service Desk via the BT Whitelist Request Form which can be found in the Client Welcome Pack. This form needs to be completed and submitted to the BT Service Desk prior to the hosting environment being made available to you. 
+				Your access to the data centre and ability to request deliveries and additional visitors is managed and maintained via your BT Customer Whitelist. <br/><br/>The Whitelist is created and managed by you and the BT Service Desk via the BT Whitelist Request Form which can be found in the Client Welcome Pack. This form needs to be completed and submitted to the BT Service Desk prior to the hosting environment being made available to you.
 			</div>
 		</span>
-		
+
 				<span class="Popup BookVisitorAccess">
 		<div class="PopupTitle">Book Visitor Access</div>
 			<div class="PopupContent">
@@ -470,14 +472,14 @@
 				For more details, see <em>“BT Telehousing Customer Welcome Pack ARK”</em>, <strong>	3.2 Access Requests</strong>
 			</div>
 		</span>
-		
+
 		<span class="Popup BookMeetingRooms">
 			<div class="PopupTitle">Book Meeting Rooms</div>
 				<div class="PopupContent">
 					Ark provide a number of meeting rooms at both the Cody and Spring Park Campuses. Please book your meeting room with the BT Service Desk in advance of your visit.
 				</div>
 		</span>
-		
+
 		<span class="Popup AccessIDRequirements">
 			<div class="PopupTitle">Access ID Requirements</div>
 				<div class="PopupContent">
@@ -485,50 +487,52 @@
 					There are no exceptions to this rule. Failure to produce a valid photo-id from the list above will result in refusal of access to the Data Centre.
 				</div>
 		</span>
-		
+
 				<span class="Popup ClientRooms">
 			<div class="PopupTitle">Client Rooms</div>
 				<div class="PopupContent">
 					A small number of Shared Client Rooms are available to BT, please contact the BT Support Desk for more details.
 				</div>
 		</span>
-		
+
 		<span class="Popup SecurityAndMonitoring">
 		<div class="PopupTitle">Security and Monitoring</div>
 			<div class="PopupContent">All Security, Power, and Environmental monitoring are managed by BT – you can just sit back and relax</div>
 		</span>
-		
+
 				<span class="Popup RemoteHands">
 		<div class="PopupTitle">Remote Hands Services</div>
 			<div class="PopupContent">Book through <a href="mailto:ah.support@bt.com">AH.Support@bt.com</a>. A minimum of 48 hours of advanced notification is required for Remote Hands services. <br>
 			For more details, see <em>“BT Telehousing Customer Welcome Pack ARK”</em>, <strong>7. Remote Hands</strong></div>
 		</span>
-		
+
 		<span class="Popup ArkDataCentres">
 		<div class="PopupTitle">Ark Data Centres</div>
 			<div class="PopupContent">Ark was established in 2005 to offer secure and efficient data centres within purpose-built campuses. With multi-million-pound investment backing and a management committed to providing the scale and flexibility for providing data centre solutions, from the ground up, that are cost-effective, risk averse and aligned to our clients’ business strategies at every step. </div>
 		</span>
-		
+
 		<span class="Popup SpringPark">
 		<div class="PopupTitle">SPRING PARK</div>
 			<div class="PopupContent">
-					Ark Data Centres<br/> Spring Park<br/> Corsham<br/> Wiltshire<br/>SN13 9GB 
+					Ark Data Centres<br/> Spring Park<br/> Corsham<br/> Wiltshire<br/>SN13 9GB
 			</div>
 		</span>
-		
+
 		<span class="Popup CodyPark">
 		<div class="PopupTitle">CODY PARK</div>
 			<div class="PopupContent">
-					Ark Data Centres<br/> Cody Park<br/> Farnborough<br/> Hampshire<br/>GU14 0LH 
+					Ark Data Centres<br/> Cody Park<br/> Farnborough<br/> Hampshire<br/>GU14 0LH
 			</div>
 		</span>
-		
+
 	</span>
 <div class="everything" >
-	
+
+	<!-- The following code is the SVG generated by Adobe Illustrator and heavily modified by me - Max Pace 26 Jun 2019 */ -->
+
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1262.5 470.3" style="enable-background:new 0 0 1262.5 470.3;" xml:space="preserve">
-<script>
+<script> // JavaScripts are to be incorporated in the SVG bit of the file, in order to access it easily from the SVG //
 	var PopupArray = document.getElementsByClassName("Popup");
 	var st6Array = document.getElementsByClassName("st6");
 	var st5Array = document.getElementsByClassName("st5");
@@ -536,25 +540,25 @@
 	var st3Array = document.getElementsByClassName("st3");
 	var st2Array = document.getElementsByClassName("st2");
 	var st1Array = document.getElementsByClassName("st1");
-	
+
 	function ShowPopup(arrayPos){
 		ResetStatusToPopups();
 		PopupArray[arrayPos].style.animation = "appear 1s forwards";
 		PopupArray[arrayPos].style.display = "block";
 		PopupArray[arrayPos].style.opacity = "1";
-		PopupArray[arrayPos].style.visibility = "visible"; 
+		PopupArray[arrayPos].style.visibility = "visible";
 	}
-	
+
 	function ResetStatusToPopups(){
 		for (i = 0; i < PopupArray.length; ++i) {
 				hidePopup(PopupArray[i]);
 			};
 	}
-	
-	function hidePopup(item){	
+
+	function hidePopup(item){
 		item.style.animation = "disappear 0.8s forwards";
 	}
-	
+
 	function UngreyAll(){
 		for (i = 0; i < st1Array.length; i++){
 			st1Array[i].style.strokeWidth = "4";
@@ -580,7 +584,7 @@
 			st6Array[i].style.stroke = "#E2BF6F";
 		}
 	}
-	
+
 	function GreyOutBut(notGrey,line1,line2,line3,line4){
 		for (i = 0; i < notGrey.length; i++){
 			notGrey[i].style.strokeWidth = "6";
@@ -606,7 +610,7 @@
 				st3Array[i].style.strokeWidth = "1";
 				st3Array[i].style.stroke = "8A9445";
 			}
-		} 
+		}
 		else {
 			for (i = 0; i < st3Array.length; i++){
 				st3Array[i].style.fill = "#e1e1e1";
@@ -614,7 +618,7 @@
 		}
 	}
 	</script>
-	
+
 <g id="BackgroundBox">
 	<rect onclick="ResetStatusToPopups()"; x="30.3" y="19.2" class="st0" width="1208.7" height="433.1" />
 </g>
@@ -669,7 +673,7 @@
 		<line class="st6" x1="397" y1="57.3" x2="397" y2="67.2" onclick="ShowPopup(0)"/>
 	</g>
 	<g id="InterchangeStops">
-		<circle id="ContractSignedCircle" class="st8" cx="113.6" cy="314.6" r="13.4" 
+		<circle id="ContractSignedCircle" class="st8" cx="113.6" cy="314.6" r="13.4"
 			onclick="ShowPopup(3)"
 			onmouseover="evt.target.setAttribute('r', '18');" onmouseout="evt.target.setAttribute('r', '13.4');"/>
 		<circle id="AccessIDRequirementsCircle" class="st8" cx="520.5" cy="192.7" r="9.2"
@@ -678,22 +682,22 @@
 		<circle id="ArkDataCentresCircle" class="st8" cx="1024.2" cy="192.7" r="9.2"
 			onmouseover="evt.target.setAttribute('r', '12.7');" onmouseout="evt.target.setAttribute('r', '9.2');"
 				 onclick="ShowPopup(16);"/>
-		<circle id="BTArkDataCentresCircle" class="st8" cx="793.4" cy="73.2" r="13.4" 
+		<circle id="BTArkDataCentresCircle" class="st8" cx="793.4" cy="73.2" r="13.4"
 			onmouseover="evt.target.setAttribute('r', '18');" onmouseout="evt.target.setAttribute('r', '13.4');"
 			onclick="ShowPopup(2)"/>
-		
+
 		<animate href="#ContractSignedCircle" attributeName="r" from="13.4" to="18" dur="0.5s" begin="mouseover" repeatCount="1" fill="freeze" restart="always"/>
 		<animate href="#ContractSignedCircle" attributeName="r" from="18" to="13.4" dur="0.5s" begin="mouseleave" repeatCount="1" fill="freeze" restart="always"/>
-		
+
 		<animate href="#AccessIDRequirementsCircle" attributeName="r" from="9.2" to="13" dur="0.5s" begin="mouseover" repeatCount="1" fill="freeze" restart="whenNotActive"/>
 		<animate href="#AccessIDRequirementsCircle" attributeName="r" from="13" to="9.2" dur="0.5s" begin="mouseleave" repeatCount="1" fill="freeze" restart="whenNotActive"/>
-		
+
 		<animate href="#BTArkDataCentresCircle" attributeName="r" from="13.4" to="18" dur="0.5s" begin="mouseover" repeatCount="1" fill="freeze" restart="whenNotActive"/>
 		<animate href="#BTArkDataCentresCircle" attributeName="r" from="18" to="13.4" dur="0.5s" begin="mouseleave" repeatCount="1" fill="freeze" restart="whenNotActive"/>
-		
+
 		<animate href="#ArkDataCentresCircle" attributeName="r" from="9.2" to="13" dur="0.5s" begin="mouseover" repeatCount="1" fill="freeze" restart="whenNotActive"/>
 		<animate href="#ArkDataCentresCircle" attributeName="r" from="13" to="9.2" dur="0.5s" begin="mouseleave" repeatCount="1" fill="freeze" restart="whenNotActive"/>
-		
+
 	</g>
 </g>
 <g id="Names">
@@ -706,7 +710,7 @@
 	<text transform="matrix(1 0 0 1 351.7196 177.0982)" class="st10 st11 st12" onclick="ShowPopup(7);">between Racks</text>
 	<text transform="matrix(1 0 0 1 351.7193 51.4117)" class="st10 st11 st12"
 		  onclick="ShowPopup(0);">Book Storage</text>
-	<text transform="matrix(1 0 0 1 781.621 34.4917)" class="st10 st11 st12" 
+	<text transform="matrix(1 0 0 1 781.621 34.4917)" class="st10 st11 st12"
 		  onclick="ShowPopup(2);">BT</text>
 	<text transform="matrix(1 0 0 1 734.021 51.4117)" class="st10 st11 st12"
 		  onclick="ShowPopup(2);">Ark Data Centres</text>
@@ -727,18 +731,18 @@
 	<text transform="matrix(1 0 0 1 1033.3485 212.7798)" class="st10 st11 st12" onclick="ShowPopup(16);">Ark Data Centres</text>
 	<text transform="matrix(1 0 0 1 532.3597 210.1523)" class="st9" onclick="ShowPopup(12);"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(12);">Access</tspan><tspan x="0" y="18" class="st10 st11 st12" onclick="ShowPopup(12);">ID Requirements</tspan></text>
 </g>
-<g id="Key">		
-	<line class="st6" x1="1044.8" y1="352.5" x2="1134.6" y2="352.5" onclick="GreyOutBut(st6Array,st1Array,st2Array,st4Array,st5Array)" 
+<g id="Key">
+	<line class="st6" x1="1044.8" y1="352.5" x2="1134.6" y2="352.5" onclick="GreyOutBut(st6Array,st1Array,st2Array,st4Array,st5Array)"
 		  onmouseout="setTimeout(UngreyAll,500)" />
-	<line class="st4" x1="1044.8" y1="380.6" x2="1134.6" y2="380.6" onclick="GreyOutBut(st4Array,st1Array,st2Array,st5Array,st6Array)" 
+	<line class="st4" x1="1044.8" y1="380.6" x2="1134.6" y2="380.6" onclick="GreyOutBut(st4Array,st1Array,st2Array,st5Array,st6Array)"
 		  onmouseout="setTimeout(UngreyAll,500)" />
 	<line class="st1" x1="1044.8" y1="409" x2="1134.6" y2="409" onclick="GreyOutBut(st1Array,st5Array,st2Array,st4Array,st6Array)"
 		  onmouseout="setTimeout(UngreyAll,500)" />
-	<line class="st2" x1="1044.8" y1="437.4" x2="1134.6" y2="437.4" onclick="GreyOutBut(st2Array,st1Array,st5Array,st4Array,st6Array)"  
+	<line class="st2" x1="1044.8" y1="437.4" x2="1134.6" y2="437.4" onclick="GreyOutBut(st2Array,st1Array,st5Array,st4Array,st6Array)"
 		  onmouseout="setTimeout(UngreyAll,500)" />
 	<line class="st5" x1="1044.8" y1="322.4" x2="1134.6" y2="322.4" onclick="GreyOutBut(st5Array,st1Array,st2Array,st4Array,st6Array)"
 		  onmouseout="setTimeout(UngreyAll,500)" />
-	
+
 	<g>
 		<text transform="matrix(1 0 0 1 1043.8494 302.7371)" class="st10 st11 st12">Key to lines</text>
 	</g>
@@ -760,7 +764,7 @@
 	<rect x="1034.5" y="273.1" class="st13" width="223.6" height="193.6"/>
 </g>
 </svg>
-
+		<!-- I should make this prettier -->
 	<div class="HowToUse" style="font-size:14px;"> <br/><br/>
 		Click on each step to get additional information. Click on the empty spaces to close the additional information windows. <br/>
 		To highlight a single process, click on its name/colour in the Key to lines section.<br/>
@@ -768,12 +772,9 @@
 		It's currently compatible with Microsoft Edge, Google Chrome, Mozilla Firefox and Apple Safari. If you have found a bug and you wish to report it, please send a bug-report to "datacentre@arkdatacentres.co.uk".
 	</div>
 	</div>
-	
-	<script>
-	window.onload = function(){
-		ResetStatusToPopups();
-	}</script>
-<div class="small-screen" style="display:none;">The resolution of your device is too small, please use a device with a bigger screen or enlarge the window of your browser if possible.</div>
-	
+
+	<!-- In order to make everything disappear, this seems the fastest way. -->
+	<script>window.onload = function(){ResetStatusToPopups();}</script>
+<div class="small-screen" style="display:none;">The resolution of your device is too small, please use a device with a bigger screen or enlarge the window of your browser if possible.</div> <!-- In case the users open it in a smaller window-->
 </body>
 </html>
