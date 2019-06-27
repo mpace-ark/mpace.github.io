@@ -60,19 +60,6 @@
 	
 	body {
 		font-family:'P22UndergroundMedium','Noto Sans HK', 'Raleway', sans-serif;
-		transform-duration: 2s;
-		transform-style: ease-in-out;
-		transition: opacity .7s;
-		animation-duration: .7s;
-		animation-iteration-count: infinite;
-		transform-origin: center center;
-		-webkit-transition: opacity .7s ease-in-out;
-    -moz-transition: opacity .7s ease-in-out;
-    -ms-transition: opacity .7s ease-in-out;
-    -o-transition: opacity .7s ease-in-out;
-		-webkit-transition: opacity .7s ease-in-out;
-		-webkit-transform: opacity .7s ease-in-out;
-		animation: opacity .7s ease-in-out;
 	}
 	
 	.Popup{
@@ -94,13 +81,115 @@
 		padding-left: 12px!important;
 		text-align: left;
 		font-weight: normal    !important;
-		transition: opacity 0.7s linear;
-	-webkit-transition: opacity 0.7s ease-in-out;
-    -moz-transition: opacity 0.7s ease-in-out;
-    -ms-transition: opacity 0.7s ease-in-out;
-    -o-transition: opacity 0.7s ease-in-out;
-		animation: appear 1s linear alternate;
+		display: none; 
 	}
+	
+	@keyframes appear {
+		from{
+			opacity: 0;
+			visibility: hidden;
+			display:none;
+		}
+		10% {
+			opacity = 0.1;
+			visibility: visible;
+			display:block;
+		}
+		to {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	
+	@keyframes disappear {
+		from{
+			opacity: 1;
+			visibility: visible;
+			display:block;
+		}
+		90% {
+			opacity = 0.9;
+			visibility: visible;
+			display: block;
+		}
+		to {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	
+	
+	@-webkit-keyframes appear {
+		from{
+			opacity: 0;
+			visibility: hidden;
+			display:none;
+		}
+		10% {
+			opacity = 0.1;
+			visibility: visible;
+			display:block;
+		}
+		to {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	
+	@-moz-keyframes disappear {
+		from{
+			opacity: 1;
+			visibility: visible;
+			display:block;
+		}
+		90% {
+			opacity = 0.9;
+			visibility: visible;
+			display: block;
+		}
+		to {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	
+	@-o-keyframes disappear {
+		from{
+			opacity: 1;
+			visibility: visible;
+			display:block;
+		}
+		90% {
+			opacity = 0.9;
+			visibility: visible;
+			display: block;
+		}
+		to {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	@-o-keyframes disappear {
+		from{
+			opacity: 1;
+			visibility: visible;
+			display:block;
+		}
+		90% {
+			opacity = 0.9;
+			visibility: visible;
+			display: block;
+		}
+		to {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	
+		
+		
+	
 	.PopupTitle{
 		font-weight: bold;
 		padding-left:5px;
@@ -133,30 +222,22 @@
     top: 30%;
     opacity: 0;
     visibility: "hidden";
-    right: auto;
-    bottom: auto;
 	}
 	.InstallRacks{
     left: 21%;
     top: 15%;
     opacity: 0;
     visibility: "hidden";
-    right: auto;
-    bottom: auto;
 	}
 	.InstallTapoff{
     left: 20%;
     top: 10%;
-    right: auto;
-    bottom: auto;
     opacity: 0;
     visibility: "hidden";
 	}
 	.InstallActiveEquipment{
     left: 27%;
     top: 10%;
-    right: auto;
-    bottom: auto;
     opacity: 0;
     visibility: "hidden";
 	}
@@ -164,16 +245,12 @@
 	.CablingBetween{
     left: 34%;
     top: 13%;
-    right: auto;
-    bottom: auto;
     opacity: 0;
     visibility: "hidden";
 	}
 	.CrossConnects{
     left: 45%;
     top: 13%;
-    right: auto;
-    bottom: auto;
     opacity: 0;
     visibility: "hidden";
 	}
@@ -182,82 +259,61 @@
     top: 6%;
     opacity: 0;
     visibility: "hidden";
-    right: auto;
-    bottom: auto;
 	}
 	.BookVisitorAccess{
     left: 31%;
     top: 10%;
     opacity: 0;
     visibility: "hidden";
-    right: auto;
-    bottom: auto;
 	}
 	.BookMeetingRooms{
     left: 41%;
     top: 25%;
     opacity: 0;
     visibility: "hidden";
-    right: auto;
-    bottom: auto;
 	}
 	.AccessIDRequirements{
     left: 45%;
     top: 23%;
     opacity: 0;
     visibility: "hidden";
-    right: auto;
-    bottom: auto;
 	}
 	.ClientRooms{
     left: 55%;
     top: 18%;
     opacity: 0;
     visibility: "hidden";
-    right: auto;
-    bottom: auto;
 	}
 	.SecurityAndMonitoring{
     left: 73%;
     top: 10%;
     opacity: 0;
     visibility: "hidden";
-    right: auto;
-    bottom: auto;
 	}
 	.RemoteHands{
     left: 51%;
     top: 12%;
     opacity: 0;
     visibility: "hidden";
-    right: auto;
-    bottom: auto;
 	}
 	.ArkDataCentres{
     left: 65%;
     top: 13%;
     opacity: 0;
     visibility: "hidden";
-    right: auto;
-    bottom: auto;
 	}
 	.SpringPark{
     left: 75%;
     top: 5%;
     opacity: 0;
     visibility: "hidden";
-    right: auto;
-    bottom: auto;
 	}
 	.CodyPark{
     left: 59%;
     top: 27%;
     opacity: 0;
     visibility: "hidden";
-    /* [disabled]right: 5%; */
-    bottom: auto;
 	}
-	
 	
 	/* The following is autocreated by the SVG Editor*/
 	
@@ -444,19 +500,20 @@
 	
 	function ShowPopup(arrayPos){
 		ResetStatusToPopups();
+		PopupArray[arrayPos].style.animation = "appear 1s forwards";
 		PopupArray[arrayPos].style.display = "block";
 		PopupArray[arrayPos].style.opacity = "1";
-		PopupArray[arrayPos].style.visibility = "visible";
+		PopupArray[arrayPos].style.visibility = "visible"; 
+		
 	}
 	function ResetStatusToPopups(){
+
 		for (i = 0; i < PopupArray.length; ++i) {
 				hidePopup(PopupArray[i]);
 			};
 	}
 	function hidePopup(item){	
-		item.style.opacity = "0";
-		item.style.visibility = "invisibile";
-		item.style.display="none";
+		item.style.animation = "disappear 1s forwards";
 	}
 	
 	function UngreyAll(){
@@ -481,15 +538,15 @@
 			st6Array[i].style.stroke = "#E2BF6F";
 		}
 	}
-	function GreyOutBut(notGrey,line1,line2,line3,line4){	
-		console.log(notGrey + " won't turn grey");
+	function GreyOutBut(notGrey,line1,line2,line3,line4){
+				
 		for (i = 0; i < notGrey.length; i++){
-			notGrey[i].style.strokeWidth = "4";
+			notGrey[i].style.strokeWidth = "6";
 		}
 		for (i = 0; i < line1.length; i++){
 			line1[i].style.stroke = "#e1e1e1";
 			line1[i].style.strokeWidth = "2";
-			console.log(line1[i]);
+
 		}
 		for (i = 0; i < line2.length; i++){
 			line2[i].style.stroke = "#e1e1e1";
@@ -511,6 +568,8 @@
 	<rect onclick="ResetStatusToPopups()"; x="30.3" y="19.2" class="st0" width="1208.7" height="433.1" />
 </g>
 <g id="Main">
+			<animate class="thinLines" attributeName="stroke-width" from="4" to="2" dur="1s" begin="indefinite" fill="freeze" />
+		<animate class="thickLines" attributeName="stroke-width" from="2" to="4" dur="1s" begin="indefinite" fill="freeze" />
 	<g id="LoopProcedures_1_">
 		<path class="st1" d="M800.9,68.7h91.6c9.4,0,13,1.4,17,5.6l115.9,115.9"/>
 		<path class="st1" d="M787,72.5l108.9,108.9c4.1,4.3,9,9.5,20.2,9.5h108.8"/>
@@ -538,7 +597,7 @@
 		<line class="st4" x1="581.8" y1="130.4" x2="575.3" y2="123.9" onclick="ShowPopup(8);"/>
 	</g>
 	<g id="AccessProcedures_1_">
-		<line class="st5" x1="385.9" y1="314.6" x2="113.8" y2="314.6"/>
+		<line class="st5" x1="385.9" y1="314.6" x2="113.8" y2="314.6" />
 		<line class="st5" x1="522.1" y1="192.4" x2="408.1" y2="306.4"/>
 		<line class="st5" x1="660" y1="192.7" x2="522.1" y2="192.7"/>
 		<line class="st5" x1="678.7" y1="185.2" x2="795.3" y2="68.7"/>
@@ -559,22 +618,35 @@
 		<line class="st6" x1="397" y1="57.3" x2="397" y2="67.2" onclick="ShowPopup(0)"/>
 	</g>
 	<g id="InterchangeStops">
-		<circle class="st8" cx="113.6" cy="314.6" r="13.4" 
+		<circle id="ContractSignedCircle" class="st8" cx="113.6" cy="314.6" r="13.4" 
 			onclick="ShowPopup(3)"
 			onmouseover="evt.target.setAttribute('r', '18');" onmouseout="evt.target.setAttribute('r', '13.4');"/>
-		<circle class="st8" cx="520.5" cy="192.7" r="9.2"
+		<circle id="AccessIDRequirementsCircle" class="st8" cx="520.5" cy="192.7" r="9.2"
 			onmouseover="evt.target.setAttribute('r', '12.7');" onmouseout="evt.target.setAttribute('r', '9.2');"
 				onclick="ShowPopup(12)"/>
-		<circle class="st8" cx="1024.2" cy="192.7" r="9.2"
+		<circle id="ArkDataCentresCircle" class="st8" cx="1024.2" cy="192.7" r="9.2"
 			onmouseover="evt.target.setAttribute('r', '12.7');" onmouseout="evt.target.setAttribute('r', '9.2');"
 				 onclick="ShowPopup(16);"/>
-		<circle class="st8" cx="793.4" cy="73.2" r="13.4" 
+		<circle id="BTArkDataCentresCircle" class="st8" cx="793.4" cy="73.2" r="13.4" 
 			onmouseover="evt.target.setAttribute('r', '18');" onmouseout="evt.target.setAttribute('r', '13.4');"
 			onclick="ShowPopup(2)"/>
+		
+		<animate href="#ContractSignedCircle" attributeName="r" from="13.4" to="18" dur="0.5s" begin="mouseover" repeatCount="1" fill="freeze" restart="always"/>
+		<animate href="#ContractSignedCircle" attributeName="r" from="18" to="13.4" dur="0.5s" begin="mouseleave" repeatCount="1" fill="freeze" restart="always"/>
+		
+		<animate href="#AccessIDRequirementsCircle" attributeName="r" from="9.2" to="13" dur="0.5s" begin="mouseover" repeatCount="1" fill="freeze" restart="whenNotActive"/>
+		<animate href="#AccessIDRequirementsCircle" attributeName="r" from="13" to="9.2" dur="0.5s" begin="mouseleave" repeatCount="1" fill="freeze" restart="whenNotActive"/>
+		
+		<animate href="#BTArkDataCentresCircle" attributeName="r" from="13.4" to="18" dur="0.5s" begin="mouseover" repeatCount="1" fill="freeze" restart="whenNotActive"/>
+		<animate href="#BTArkDataCentresCircle" attributeName="r" from="18" to="13.4" dur="0.5s" begin="mouseleave" repeatCount="1" fill="freeze" restart="whenNotActive"/>
+		
+		<animate href="#ArkDataCentresCircle" attributeName="r" from="9.2" to="13" dur="0.5s" begin="mouseover" repeatCount="1" fill="freeze" restart="whenNotActive"/>
+		<animate href="#ArkDataCentresCircle" attributeName="r" from="13" to="9.2" dur="0.5s" begin="mouseleave" repeatCount="1" fill="freeze" restart="whenNotActive"/>
+		
 	</g>
 </g>
 <g id="Names">
-	<text transform="matrix(1 0 0 1 30.7336 310.075)" class="st9"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(3)"; >Contract </tspan><tspan x="17.7" y="18" class="st10 st11 st12"
+	<text transform="matrix(1 0 0 1 30.7336 310.075)" class="st9"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(3)";>Contract </tspan><tspan x="17.7" y="18" class="st10 st11 st12"
 		onclick="ShowPopup(3);">Signed </tspan></text>
 	<text transform="matrix(1 0 0 1 151.8397 339.1626)" class="st9" onclick="ShowPopup(9);"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(9);">White List</tspan><tspan x="-8.1" y="18" class="st10 st11 st12" onclick="ShowPopup(9);">Management</tspan></text>
 	<text transform="matrix(1 0 0 1 470.2537 278.2809)" class="st9" onclick="ShowPopup(11);"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(11);">Book </tspan><tspan x="0" y="18" class="st10 st11 st12" onclick="ShowPopup(11);">Meeting Rooms</tspan></text>
@@ -604,29 +676,35 @@
 	<text transform="matrix(1 0 0 1 1033.3485 212.7798)" class="st10 st11 st12" onclick="ShowPopup(16);">Ark Data Centres</text>
 	<text transform="matrix(1 0 0 1 532.3597 210.1523)" class="st9" onclick="ShowPopup(12);"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(12);">Access</tspan><tspan x="0" y="18" class="st10 st11 st12" onclick="ShowPopup(12);">ID Requirements</tspan></text>
 </g>
-<g id="Key">
-	<line class="st6" x1="1044.8" y1="352.5" x2="1134.6" y2="352.5" onclick="GreyOutBut(st6Array,st1Array,st2Array,st4Array,st5Array)"  onmouseout="UngreyAll()" />
-	<line class="st4" x1="1044.8" y1="380.6" x2="1134.6" y2="380.6" onclick="GreyOutBut(st4Array,st1Array,st2Array,st5Array,st6Array)"  onmouseout="UngreyAll()" />
-	<line class="st1" x1="1044.8" y1="409" x2="1134.6" y2="409" onclick="GreyOutBut(st1Array,st5Array,st2Array,st4Array,st6Array)"  onmouseout="UngreyAll()" />
-	<line class="st2" x1="1044.8" y1="437.4" x2="1134.6" y2="437.4" onclick="GreyOutBut(st2Array,st1Array,st5Array,st4Array,st6Array)"  onmouseout="UngreyAll()" />
-	<line class="st5" x1="1044.8" y1="322.4" x2="1134.6" y2="322.4" onclick="GreyOutBut(st5Array,st1Array,st2Array,st4Array,st6Array)"  onmouseout="UngreyAll()" />
+<g id="Key">		
+	<line class="st6" x1="1044.8" y1="352.5" x2="1134.6" y2="352.5" onclick="GreyOutBut(st6Array,st1Array,st2Array,st4Array,st5Array)" 
+		  onmouseout="setTimeout(UngreyAll,500)" />
+	<line class="st4" x1="1044.8" y1="380.6" x2="1134.6" y2="380.6" onclick="GreyOutBut(st4Array,st1Array,st2Array,st5Array,st6Array)" 
+		  onmouseout="setTimeout(UngreyAll,500)" />
+	<line class="st1" x1="1044.8" y1="409" x2="1134.6" y2="409" onclick="GreyOutBut(st1Array,st5Array,st2Array,st4Array,st6Array)"
+		  onmouseout="setTimeout(UngreyAll,500)" />
+	<line class="st2" x1="1044.8" y1="437.4" x2="1134.6" y2="437.4" onclick="GreyOutBut(st2Array,st1Array,st5Array,st4Array,st6Array)"  
+		  onmouseout="setTimeout(UngreyAll,500)" />
+	<line class="st5" x1="1044.8" y1="322.4" x2="1134.6" y2="322.4" onclick="GreyOutBut(st5Array,st1Array,st2Array,st4Array,st6Array)"
+		  onmouseout="setTimeout(UngreyAll,500)" />
+	
 	<g>
 		<text transform="matrix(1 0 0 1 1043.8494 302.7371)" class="st10 st11 st12">Key to lines</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 1164.8594 327.1223)" class="st10 st11 st12" onmouseover="GreyOutBut(st5Array,st1Array,st2Array,st4Array,st6Array)" onmouseout="UngreyAll()">Access</text>
+		<text transform="matrix(1 0 0 1 1164.8594 327.1223)" class="st10 st11 st12" onmouseover="GreyOutBut(st5Array,st1Array,st2Array,st4Array,st6Array)" onmouseout="setTimeout(UngreyAll,500)" >Access</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 1164.8594 355.647)" class="st10 st11 st12"  onclick="GreyOutBut(st6Array,st1Array,st2Array,st4Array,st5Array)"  onmouseout="UngreyAll()" >Delivery</text>
+		<text transform="matrix(1 0 0 1 1164.8594 355.647)" class="st10 st11 st12"  onclick="GreyOutBut(st6Array,st1Array,st2Array,st4Array,st5Array)"  onmouseout="setTimeout(UngreyAll,500)" >Delivery</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 1164.8594 384.5974)" class="st10 st11 st12"  onclick="GreyOutBut(st4Array,st1Array,st2Array,st6Array,st5Array)"  onmouseout="UngreyAll()" >Installation</text>
+		<text transform="matrix(1 0 0 1 1164.8594 384.5974)" class="st10 st11 st12"  onclick="GreyOutBut(st4Array,st1Array,st2Array,st6Array,st5Array)"  onmouseout="setTimeout(UngreyAll,500)" >Installation</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 1164.8594 412.8875)" class="st10 st11 st12" onclick="GreyOutBut(st1Array,st6Array,st2Array,st4Array,st5Array)"  onmouseout="UngreyAll()" >Other</text>
+		<text transform="matrix(1 0 0 1 1164.8594 412.8875)" class="st10 st11 st12" onclick="GreyOutBut(st1Array,st6Array,st2Array,st4Array,st5Array)"  onmouseout="setTimeout(UngreyAll,500)" >Other</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 1164.8594 442.2637)" class="st10 st11 st12" onclick="GreyOutBut(st2Array,st1Array,st6Array,st4Array,st5Array)"  onmouseout="UngreyAll()" >Sites</text>
+		<text transform="matrix(1 0 0 1 1164.8594 442.2637)" class="st10 st11 st12" onclick="GreyOutBut(st2Array,st1Array,st6Array,st4Array,st5Array)"  onmouseout="setTimeout(UngreyAll,500)" >Sites</text>
 	</g>
 	<rect x="1034.5" y="273.1" class="st13" width="223.6" height="193.6"/>
 </g>
