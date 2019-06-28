@@ -58,11 +58,15 @@
 	</style>
 <style type="text/css">
 
+	.small-screen{display:none!important;}
+	.HowToUse{display:block!important;}
 	/* This is the CSS written by me - Max Pace 26 Jun 2019 */
 	body {
 		font-family:'P22UndergroundMedium','Noto Sans HK', 'Raleway', sans-serif;
 	}
-
+	.responsive {visibility: hidden!important; z-index: 250; display:none;}
+	.nonResponsive {visibility: hidden!important; z-index: 275; display:block;}
+	
 	.Popup{
 		min-height: 150px;
 		height: auto;
@@ -187,7 +191,7 @@
 			visibility: hidden;
 		}
 	}
-	/* Popup CSS - there must be a smarter way to deal with this. */
+/* Popup CSS - there must be a smarter way to deal with this. */
 	.PopupTitle{
 		font-weight: bold;
 		padding-left:5px;
@@ -355,6 +359,13 @@
         -o-transition: all 1000ms ease;
         transition: all 1000ms ease;
 	}
+	.st8{
+		 -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+	}
 	/* The following is autocreated by the SVG Editor, Adobe Illustrator CC */
 
 .st0{fill:#FFFFFF; animation: stroke 1s; animation-iteration-count: infinite;}
@@ -373,16 +384,248 @@
 	.st13{fill:none;stroke:#54B3E9;stroke-miterlimit:10;}
 
 	/* Very basic Responsive CSS - I can't rework everything for mobile for the time being */
-@media (max-width: 920px){
+@media (min-width: 420px) and (max-width: 920px){
 
-	.everything   {display: none !important;}
-	#Overlay{display:none!important;}
-	.small-screen {display:block!important;}
+	.responsive {visibility: visible!important; z-index: 275; display:block!important;}
+	.nonResponsive {visibility: hidden!important; z-index: 250; display:none!important;}
+	.small-screen{display:none!important;}
+	.HowToUse{display:block!important;}
+	
+.st0r{fill:#FFFFFF;}
+	.st1r{fill:none;stroke:#E1BF6F;stroke-width:7;stroke-miterlimit:10;}
+	.st2r{fill:none;stroke:#232D63;stroke-width:7;stroke-miterlimit:10;}
+	.st3r{fill:none;stroke:#8F8F8F;stroke-width:7;stroke-miterlimit:10;}
+	.st4r{fill:none;stroke:#984A57;stroke-width:7;stroke-miterlimit:10;}
+	.st5r{fill:none;stroke:#8A9455;stroke-width:7;stroke-miterlimit:10;}
+	.st6r{fill:#8A9455;stroke:#8A9455;stroke-width:7;stroke-miterlimit:10;}
+	.st7r{fill:#FFFFFF;stroke:#010101;stroke-width:4;stroke-miterlimit:10;}
+	.st8r{fill:#23438F;}
+	.st9r{font-family:'P22UndergroundHeavy';}
+	.st10r{font-size:20px;}
+	.st11r{enable-background:new;}
+	.st17r{font-size:20px;}
+	.st18r{fill:none;stroke:#59B3E4;stroke-miterlimit:10;}
+	
+	.st1r{
+		 -webkit-transition: all 900ms ease;
+        -moz-transition: all 900ms ease;
+        -ms-transition: all 900ms ease;
+        -o-transition: all 900ms ease;
+        transition: all 900ms ease;
+	}
+	.st2r{
+		-webkit-transition: all 900ms ease;
+        -moz-transition: all 900ms ease;
+        -ms-transition: all 900ms ease;
+        -o-transition: all 900ms ease;
+        transition: all 900ms ease;
+	}
+	.st3r{
+		-webkit-transition: all 900ms ease;
+        -moz-transition: all 900ms ease;
+        -ms-transition: all 900ms ease;
+        -o-transition: all 900ms ease;
+        transition: all 900ms ease;
+	}
+	.st4r{
+		 -webkit-transition: all 900ms ease;
+        -moz-transition: all 900ms ease;
+        -ms-transition: all 900ms ease;
+        -o-transition: all 900ms ease;
+        transition: all 900ms ease;
+	}
+	.st5r{
+		 -webkit-transition: all 900ms ease;
+        -moz-transition: all 900ms ease;
+        -ms-transition: all 900ms ease;
+        -o-transition: all 900ms ease;
+        transition: all 900ms ease;
+	}
+	.st6r{
+		 -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+	}
+	.st7r{
+		 -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+	}
+	svg {
+		width: auto;
+		height: auto;
+		max-width: 920px;
+	}
+	.Popup{
+		min-height: 150px;
+		height: auto;
+		width: 250px!important;
+		min-width: 250px!important;
+		max-width: 250px!important;
+		z-index: 300;
+		overflow-x: wrap;
+		background: white;
+		border-bottom: 7px solid #54B3E9;
+		border-right: 5px solid #54B3E9;
+		border-top: 3px solid #54B3E9;
+		border-left: 3px solid #54B3E9;
+		border-radius: 40px;
+		padding: 10px;
+		padding-left: 12px!important;
+		text-align: left;
+		font-weight: normal!important;
+		display: none;
+		left: 32.5%!important;
+		top: 20%!important;
+		position:fixed!important;
+	}
+	.PopupTitle{
+		font-size: 20px!important;
+		font-weight: bold!important;
+		padding-left:5px!important;
+	}
+	.PopupContent{
+		font-size:18px!important;
+		padding-top:5px;
+		padding-bottom:5px;
+		align-content: flex-start;
+	}
+
+	.BookDeliveries{
+    	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.BookStorage{
+  	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.BTArkDataCentres{
+   		left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.ContractSigned{
+  	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.InstallRacks{
+  	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.InstallTapoff{
+   	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.InstallActiveEquipment{
+   	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.CablingBetween{
+  	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.CrossConnects{
+  	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.WhiteListManagement{
+  	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.BookVisitorAccess{
+  	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.BookMeetingRooms{
+  	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.AccessIDRequirements{
+  	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.ClientRooms{
+  	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.SecurityAndMonitoring{
+  	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.RemoteHands{
+  	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.ArkDataCentres{
+  	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.SpringPark{
+  	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
+	.CodyPark{
+  	 	left: inherit;
+    	top: inherit;
+		bottom:inherit;
+		right:inherit;
+	}
 
 }
 
 @media (min-width : 918px ){
-	.small-screen {display:none!important;}
+	.responsive {visibility: hidden!important; z-index: 250; display:none!important;}
+	.nonResponsive {visibility: visible!important; z-index: 275; display:block!important;}
+	.small-screen{display:none!important;}
+	.HowToUse{display:block!important;}
+}
+	
+@media (max-width : 419px ){
+
+	.small-screen{display:block!important;}
+	.responsive{display:none!important;}
+	.nonResponsive{display:none!important;}
+	.HowToUse{display:none!important;}
+	
 }
 </style>
 
@@ -529,7 +772,7 @@
 <div class="everything" >
 
 	<!-- The following code is the SVG generated by Adobe Illustrator and heavily modified by me - Max Pace 26 Jun 2019 */ -->
-
+<div class="nonResponsive">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1262.5 470.3" style="enable-background:new 0 0 1262.5 470.3;" xml:space="preserve">
 <script> // JavaScripts are to be incorporated in the SVG bit of the file, in order to access it easily from the SVG //
@@ -685,19 +928,6 @@
 		<circle id="BTArkDataCentresCircle" class="st8" cx="793.4" cy="73.2" r="13.4"
 			onmouseover="evt.target.setAttribute('r', '18');" onmouseout="evt.target.setAttribute('r', '13.4');"
 			onclick="ShowPopup(2)"/>
-
-		<animate href="#ContractSignedCircle" attributeName="r" from="13.4" to="18" dur="0.5s" begin="mouseover" repeatCount="1" fill="freeze" restart="always"/>
-		<animate href="#ContractSignedCircle" attributeName="r" from="18" to="13.4" dur="0.5s" begin="mouseleave" repeatCount="1" fill="freeze" restart="always"/>
-
-		<animate href="#AccessIDRequirementsCircle" attributeName="r" from="9.2" to="13" dur="0.5s" begin="mouseover" repeatCount="1" fill="freeze" restart="whenNotActive"/>
-		<animate href="#AccessIDRequirementsCircle" attributeName="r" from="13" to="9.2" dur="0.5s" begin="mouseleave" repeatCount="1" fill="freeze" restart="whenNotActive"/>
-
-		<animate href="#BTArkDataCentresCircle" attributeName="r" from="13.4" to="18" dur="0.5s" begin="mouseover" repeatCount="1" fill="freeze" restart="whenNotActive"/>
-		<animate href="#BTArkDataCentresCircle" attributeName="r" from="18" to="13.4" dur="0.5s" begin="mouseleave" repeatCount="1" fill="freeze" restart="whenNotActive"/>
-
-		<animate href="#ArkDataCentresCircle" attributeName="r" from="9.2" to="13" dur="0.5s" begin="mouseover" repeatCount="1" fill="freeze" restart="whenNotActive"/>
-		<animate href="#ArkDataCentresCircle" attributeName="r" from="13" to="9.2" dur="0.5s" begin="mouseleave" repeatCount="1" fill="freeze" restart="whenNotActive"/>
-
 	</g>
 </g>
 <g id="Names">
@@ -764,17 +994,247 @@
 	<rect x="1034.5" y="273.1" class="st13" width="223.6" height="193.6"/>
 </g>
 </svg>
+</div>
+	
+<div class ="responsive" >
+	<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- This is the SVG I had to create to make everything responsive -->
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 540.3 1239.6" style="enable-background:new 0 0 540.3 1239.6;" xml:space="preserve">
+		
+<script> // JavaScripts are to be incorporated in the SVG bit of the file, in order to access it easily from the SVG //
+	var PopupArrayR = document.getElementsByClassName("Popup");
+	var st6ArrayR = document.getElementsByClassName("st6r");
+	var st5ArrayR = document.getElementsByClassName("st5r");
+	var st4ArrayR = document.getElementsByClassName("st4r");
+	var st3ArrayR = document.getElementsByClassName("st3r");
+	var st2ArrayR = document.getElementsByClassName("st2r");
+	var st1ArrayR = document.getElementsByClassName("st1r");
+
+	function ShowPopupR(arrayPos){
+		ResetStatusToPopupsR();
+		PopupArrayR[arrayPos].style.animation = "appear 1s forwards";
+		PopupArrayR[arrayPos].style.display = "block";
+		PopupArrayR[arrayPos].style.opacity = "1";
+		PopupArrayR[arrayPos].style.visibility = "visible";
+	}
+
+	function ResetStatusToPopupsR(){
+		for (i = 0; i < PopupArrayR.length; ++i) {
+				hidePopupR(PopupArrayR[i]);
+			};
+	}
+
+	function hidePopupR(item){
+		item.style.animation = "disappear 0.8s forwards";
+	}
+
+	function UngreyAllR(){
+		for (i = 0; i < st1ArrayR.length; i++){
+			st1ArrayR[i].style.strokeWidth = "7";
+			st1ArrayR[i].style.stroke = "#E2BF6F";
+		}
+		for (i = 0; i < st2ArrayR.length; i++){
+			st2ArrayR[i].style.strokeWidth = "7";
+			st2ArrayR[i].style.stroke = "#152864";
+		}
+		for (i = 0; i < st3ArrayR.length; i++){
+			st3ArrayR[i].style.strokeWidth = "7";
+			st3ArrayR[i].style.stroke = "#8E8E8E"
+		}
+		for (i = 0; i < st4ArrayR.length; i++){
+			st4ArrayR[i].style.strokeWidth = "7";
+			st4ArrayR[i].style.stroke = "#974956"
+		}
+		for (i = 0; i < st5ArrayR.length; i++){
+			st5ArrayR[i].style.strokeWidth = "7";
+			st5ArrayR[i].style.stroke = "#8A9455";
+		}
+		for (i = 0; i < st6ArrayR.length; i++){
+			st6ArrayR[i].style.strokeWidth = "0";
+			st6ArrayR[i].style.fill = "#8A9455";
+		}
+	}
+
+	function GreyOutButR(notGrey,line1,line2,line3,line4){
+		for (i = 0; i < notGrey.length; i++){
+			notGrey[i].style.strokeWidth = "9";
+		}
+		for (i = 0; i < line1.length; i++){
+			line1[i].style.stroke = "#e1e1e1";
+			line1[i].style.strokeWidth = "5";
+		}
+		for (i = 0; i < line2.length; i++){
+			line2[i].style.stroke = "#e1e1e1";
+			line2[i].style.strokeWidth = "5";
+		}
+		for (i = 0; i < line3.length; i++){
+			line3[i].style.stroke = "#e1e1e1";
+			line3[i].style.strokeWidth = "5";
+		}
+		for (i = 0; i < line4.length; i++){
+			line4[i].style.stroke = "#e1e1e1";
+			line4[i].style.strokeWidth = "5";
+		}
+		if (notGrey == st5ArrayR){
+			for (i = 0; i < st6ArrayR.length; i++){
+				st6ArrayR[i].style.strokeWidth = "3";
+				st6ArrayR[i].style.stroke = "#8A9445";
+			}
+		}
+		else {
+			for (i = 0; i < st6ArrayR.length; i++){
+				st6ArrayR[i].style.fill = "#e1e1e1";
+				st6ArrayR[i].style.stroke = "#e1e1e1";
+				st6ArrayR[i].style.strokeWidth = "#e1e1e1";
+			}
+		}
+	}
+	</script>
+	<g id="BackgroundBoxR">
+		<rect onclick="ResetStatusToPopupsR(); UngreyAllR();"; x="41.1" class="st0r" width="480" height="900"/>
+	</g>
+	<g id="MainR">
+		<g id="DeliveryR">
+			<line class="st1r" x1="281.1" y1="63.8" x2="281.1" y2="652"/>
+			<line class="st1r" x1="281.1" y1="254.3" x2="264.4" y2="254.3" onclick="ShowPopupR(1)"/>
+			<line class="st1r" x1="297.7" y1="500.8" x2="281.1" y2="500.8" onclick="ShowPopupR(0)"/>
+		</g>
+		<g id="AccessR">
+			<path class="st2r" d="M281.1,652L163.9,534.9c-2.8-2.9-5.4-9.4-5.4-14.6V195.6c0-5.2,2.5-11.7,5.4-14.6L281.1,63.8"/>
+			<line class="st2r" x1="203.3" y1="141.6" x2="191.5" y2="129.8" onclick="ShowPopupR(9)"/>
+			<line class="st2r" x1="158.5" y1="254.3" x2="141.8" y2="254.3" onclick="ShowPopupR(10)"/>
+			<line class="st2r" x1="158.5" y1="376.6" x2="141.8" y2="376.6" onclick="ShowPopupR(11)"/>
+			<line class="st2r" x1="158.5" y1="500.8" x2="141.8" y2="500.8"  onclick="ShowPopupR(12)"/>
+			<line class="st2r" x1="209.6" y1="580.7" x2="197.8" y2="592.5" onclick="ShowPopupR(13)"/>
+		</g>
+		<g id="InstallationR">
+			<path class="st3r" d="M281.1,652l117.2-117.2c2.8-2.9,5.4-9.4,5.4-14.6V195.6c0-5.2-2.5-11.7-5.4-14.6L281.1,63.8"/>
+			<line class="st3r" x1="359.3" y1="142.5" x2="371.1" y2="130.7" onclick="ShowPopupR(4)"/>
+			<line class="st3r" x1="404.1" y1="255.2" x2="420.8" y2="255.2" onclick="ShowPopupR(5)"/>
+			<line class="st3r" x1="404.1" y1="377.4" x2="420.8" y2="377.4" onclick="ShowPopupR(6)"/>
+			<line class="st3r" x1="404.1" y1="501.7" x2="420.8" y2="501.7" onclick="ShowPopupR(7)"/>
+			<line class="st3r" x1="353.1" y1="581.5" x2="364.9" y2="593.3" onclick="ShowPopupR(8)"/>
+		</g>
+		<g id="OtherR">
+			<line class="st4r" x1="281.1" y1="652" x2="281.1" y2="896.4"/>
+			<line class="st4r" x1="297.7" y1="720.7" x2="281.1" y2="720.7" onclick="ShowPopupR(14)"/>
+			<line class="st4r" x1="281.1" y1="842.9" x2="264.4" y2="842.9" onclick="ShowPopupR(15)"/>
+		</g>
+		<g id="SitesR">
+			<line class="st5r" x1="281.1" y1="896.4" x2="186.6" y2="990.8"/>
+			<line class="st5r" x1="375.5" y1="990.8" x2="281.1" y2="896.4"/>
+			<g id="Ark-DCs_Stops_2_R">
+				<circle class="st6r" cx="185.8" cy="990.4" r="4.2" onclick="ShowPopupR(18)"/>
+			</g>
+			<g id="Ark-DCs_Stops_3_R">
+				<circle class="st6r" cx="375" cy="990.4" r="4.2" onclick="ShowPopupR(17)"/>
+			</g>
+		</g>
+		<g id="InterchangeStopsR">
+			<circle class="st7r" cx="281.1" cy="63.8" r="13.4" onclick="ShowPopup(3)" onmouseover="evt.target.setAttribute('r', '18');" onmouseout="evt.target.setAttribute('r', '13.4');" />
+			<circle class="st7r" cx="281.1" cy="897.2" r="9.2" onclick="ShowPopup(16);" onmouseover="evt.target.setAttribute('r', '12.7');" onmouseout="evt.target.setAttribute('r', '9.2');" />
+			<circle class="st7r" cx="281.1" cy="651.4" r="13.4" onclick="ShowPopup(2)" onmouseover="evt.target.setAttribute('r', '18');" onmouseout="evt.target.setAttribute('r', '13.4');" />
+		</g>
+	</g>
+	<g id="NamesR">
+		<text transform="matrix(1 0 0 1 202.274 37.1551)" class="st8r st9r st10r" onclick="ShowPopupR(3)">Contract Signed </text>
+		<g>
+			<text transform="matrix(1 0 0 1 423.8748 472.0315)" class="st11r" onclick="ShowPopupR(7)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(7)">Cabling </tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopupR(7)">in and </tspan><tspan x="0" y="48" class="st8r st9r st10r" onclick="ShowPopupR(7)">between </tspan><tspan x="0" y="72" class="st8r st9r st10r" onclick="ShowPopupR(7)">racks</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 233.6267 655.3235)" class="st11r" onclick="ShowPopupR(2)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(2)">BT</tspan><tspan x="-140.8" y="24" class="st8r st9r st10r" onclick="ShowPopupR(2)">Ark Data Centres</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 365.2441 614.2311)" onclick="ShowPopupR(8)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(8)">Cross Connects</tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopupR(8)">and Other</tspan><tspan x="0" y="48" class="st8r st9r st10r" onclick="ShowPopupR(8)">Services</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 109.3684 842.9121)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(15)">Remote Hands</tspan><tspan x="62.6" y="24" class="st8r st9r st10r" onclick="ShowPopupR(15)">services</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 423.8746 237.3093)" class="st11r" onclick="ShowPopupR(5)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(5)">Install</tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopupR(5)">Tap-Off</tspan><tspan x="0" y="48" class="st8r st9r st10r" onclick="ShowPopupR(5)">PDU</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 423.8747 360.1351)" class="st11r" onclick="ShowPopupR(6)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(6)">Install</tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopupR(6)">Active</tspan><tspan x="0" y="48" class="st8r st9r st10r" onclick="ShowPopupR(6)">Equipment</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 302.3377 494.6053)" class="st11r" onclick="ShowPopupR(0)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(0)">Book</tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopupR(0)">Storage</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 211.0334 248.0209)" class="st11r" onclick="ShowPopupR(1)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(1)">Book </tspan><tspan x="-27.8" y="24" class="st8r st9r st10r" onclick="ShowPopupR(1)">Delivery</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 378.5825 115.6432)" class="st11r" onclick="ShowPopupR(4)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(4)">Install</tspan><tspan x="3.5" y="24" class="st8r st9r st10r" onclick="ShowPopupR(4)">Racks</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 63.5093 604.9958)" class="st8r st9r st10r" onclick="ShowPopupR(13)">Client Rooms</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 72.609 990.3931)" class="st11r" onclick="ShowPopupR(18)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(18)">Cody Park</tspan><tspan x="-24" y="24" class="st8r st9r st10r" onclick="ShowPopupR(18)">Farnborough</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 386.7897 990.3931)" class="st11r" onclick="ShowPopupR(17)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(17)">Spring Park</tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopupR(17)">Corsham</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 321.2597 720.6804)" onclick="ShowPopupR(14)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(14)">Security and </tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopupR(14)">Monitoring</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 297.7437 899.9996)" class="st8r st9r st10r" onclick="ShowPopupR(16)">Ark Data Centres</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 85.919 115.6432)" class="st11r" onclick="ShowPopupR(9)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(9)">White List</tspan><tspan x="-21.6" y="24" class="st8r st9r st10r" onclick="ShowPopupR(9)">Management</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 91.324 360.1353)" class="st11r" onclick="ShowPopupR(11)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(11)">Book</tspan><tspan x="-29.6" y="24" class="st8r st9r st10r" onclick="ShowPopupR(11)">Meeting</tspan><tspan x="-18.6" y="48" class="st8r st9r st10r" onclick="ShowPopupR(11)">Rooms</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 91.324 237.3095)" class="st11r" onclick="ShowPopupR(10)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(10)">Book</tspan><tspan x="-18" y="24" class="st8r st9r st10r" onclick="ShowPopupR(10)">Visitor</tspan><tspan x="-18.8" y="48" class="st8r st9r st10r" onclick="ShowPopupR(10)">Access</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 41.1245 494.6057)" onclick="ShowPopupR(12)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(12)">Access ID </tspan><tspan x="-37" y="24" class="st8r st9r st10r" onclick="ShowPopupR(12)">Requirements</tspan></text>
+		</g>
+	</g>
+	<g id="KeyR">
+		<line class="st1r" x1="16.1" y1="1119.6" x2="105.9" y2="1119.6" onclick="GreyOutButR(st1ArrayR,st4ArrayR,st2ArrayR,st3ArrayR,st5ArrayR);"/>
+		<line class="st3r" x1="16.1" y1="1147.6" x2="105.9" y2="1147.6" onclick="GreyOutButR(st3ArrayR,st1ArrayR,st4ArrayR,st2ArrayR,st5ArrayR);"/>
+		<line class="st4r" x1="16.1" y1="1176" x2="105.9" y2="1176" onclick="GreyOutButR(st4ArrayR,st1ArrayR,st2ArrayR,st3ArrayR,st5ArrayR);"/>
+		<line class="st5r" x1="16.1" y1="1204.4" x2="105.9" y2="1204.4" onclick="GreyOutButR(st5ArrayR,st1ArrayR,st2ArrayR,st3ArrayR,st4ArrayR);"/>
+		<line class="st2r" x1="16.1" y1="1089.4" x2="105.9" y2="1089.4" onclick="GreyOutButR(st2ArrayR,st1ArrayR,st5ArrayR,st3ArrayR,st4ArrayR);"/>
+		<g>
+			<text transform="matrix(1 0 0 1 15.1089 1069.765)" class="st8r st9r st17r">Key to lines</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 136.119 1094.1517)" class="st8r st9r st17r">Access</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 136.119 1122.6752)" class="st8r st9r st17r">Delivery</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 136.119 1151.6263)" class="st8r st9r st17r">Installation</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 136.119 1179.9154)" class="st8r st9r st17r">Other</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 136.119 1209.2924)" class="st8r st9r st17r">Sites</text>
+		</g>
+		<rect x="5.8" y="1040.1" class="st18r" width="245.6" height="193.6"/>
+	</g>
+	</svg>
+	
+</div>
 		<!-- I should make this prettier -->
-	<div class="HowToUse" style="font-size:14px;"> <br/><br/>
+<div class="HowToUse" style="font-size:14px;"> <br/>
+	<h2>How to</h2>
 		Click on each step to get additional information. Click on the empty spaces to close the additional information windows. <br/>
 		To highlight a single process, click on its name/colour in the Key to lines section.<br/>
-		Your browser needs to be compatible with SVG 1.0, HTML5 and Java Script in order to use it, and have a minimum window width of 920px.<br/>
+		Your browser needs to be compatible with SVG 1.0, HTML5 and Java Script in order to use it, and have a minimum window width of 420px.<br/>
 		It's currently compatible with Microsoft Edge, Google Chrome, Mozilla Firefox and Apple Safari. If you have found a bug and you wish to report it, please send a bug-report to "datacentre@arkdatacentres.co.uk".
 	</div>
-	</div>
-
+</div>
 	<!-- In order to make everything disappear, this seems the fastest way. -->
-	<script>window.onload = function(){ResetStatusToPopups();}</script>
-<div class="small-screen" style="display:none;">The resolution of your device is too small, please use a device with a bigger screen or enlarge the window of your browser if possible.</div> <!-- In case the users open it in a smaller window-->
+	<script>window.onload = function(){ResetStatusToPopups(); ResetStatusToPopupsR();}</script>
+<div class="small-screen" style="display:none;">Please use a device with a higher resolution - the minimum required resolution is 420px.</div> <!-- In case the users open it in a smaller window-->
 </body>
 </html>
