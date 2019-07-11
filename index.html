@@ -811,7 +811,7 @@
 <div class="maximumViewport">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1262.5 470.3" style="enable-background:new 0 0 1262.5 470.3;" xml:space="preserve">
-<script> // JavaScripts are to be incorporated in the SVG bit of the file, in order to access it easily from the SVG //
+<script type="text/javascript"><![CDATA[ /* JavaScripts are to be incorporated in the SVG bit of the file, in order to access it easily from the SVG */
 	var PopupArray = document.getElementsByClassName("Popup");
 	var st6Array = document.getElementsByClassName("st6");
 	var st5Array = document.getElementsByClassName("st5");
@@ -896,12 +896,13 @@
 			}
 		}
 	}
-	
+]]></script>
+<script type="text/javascript"> <![CDATA[
 	function RemoveClass(classToRemove){
 		var arrayOfClassToRemove = document.getElementsByClassName(classToRemove);
 		for (i = 0; i < arrayOfClassToRemove.length; i++){
 			var classString = arrayOfClassToRemove[i].className.baseVal;
-			arrayOfClassToRemove[i].className.baseVal = classString.replace(classToRemove, ' '); /*This stuff is to remove a class from an SVG - not quite sure whether or not it's going to get deprecated anytime soon. */
+			arrayOfClassToRemove[i].className.baseVal = classString.replace(classToRemove, ' ');
 		}
 	}
 
@@ -911,11 +912,11 @@
 		if (isFirefox == true || isChrome == true){
 			RemoveClass("st12");
 			console.log("The Class .st12 has been removed because you are using a modern browser");
-		} /*This is necessary because IE, Edge and Safari are not compatible with SVG transitions and animations in a normal way - so I had to find a workaround. The idea is that, since .st9:hover is not read properly by these browsers (AFAIK it has something to do with the fact that <text> is not passing its properties to its children), I added a dummy class to its tspan children to the code, that I promptly remove when the page detects modern browsers. This way, the page is not behaving EXACTLY as I want it to - on older browsers the transition is present only on a single line at a time, while on modern browsers it works on both lines. -Max, July 11 2019*/
+		} 
 	}
-</script>
+]]> </script>
 <g id="BackgroundBox">
-	<rect onclick="ResetStatusToPopups()"; x="30.3" y="19.2" class="st0" width="1208.7" height="433.1"/>
+	<rect onclick="ResetStatusToPopups()" x="30.3" y="19.2" class="st0" width="1208.7" height="433.1"/>
 </g>
 <g id="Main">
 			<animate class="thinLines" attributeName="stroke-width" from="4" to="2" dur="1s" begin="indefinite" fill="freeze" />
@@ -925,26 +926,26 @@
 		<path class="st1" d="M787,72.5l108.9,108.9c4.1,4.3,9,9.5,20.2,9.5h108.8"/>
 	</g>
 	<g id="LoopProcedures_Stops_1_">
-		<line class="st1 st14" x1="903.4" y1="70.1" x2="911.6" y2="62" onclick="ShowPopup(14);"/>
-		<line class="st1 st14" x1="907.5" y1="189.4" x2="901" y2="195.9" onclick="ShowPopup(15);"/>
+		<line class="st1 st14" x1="903.4" y1="70.1" x2="911.6" y2="62" onclick="ShowPopup(14)"/>
+		<line class="st1 st14" x1="907.5" y1="189.4" x2="901" y2="195.9" onclick="ShowPopup(15)"/>
 	</g>
 	<g id="Ark-DCs_1_">
 		<line class="st2" x1="1140.5" y1="75.5" x2="902.1" y2="313.6"/>
 	</g>
 	<g id="Ark-DCs_Stops_1_">
-		<circle class="st3 st14" cx="901.7" cy="313.9" r="4.2"  onclick="ShowPopup(18);"/>
-		<circle class="st3 st14" cx="1140.2" cy="75.7" r="4.2"  onclick="ShowPopup(17);"/>
+		<circle class="st3 st14" cx="901.7" cy="313.9" r="4.2"  onclick="ShowPopup(18)"/>
+		<circle class="st3 st14" cx="1140.2" cy="75.7" r="4.2"  onclick="ShowPopup(17)"/>
 	</g>
 	<g id="InstallProcedures_1_">
 		<path class="st4" d="M791.2,72.5H651.5c-8.9-0.7-14.7,3.3-19.4,7.5L519.9,192.3l0.1,0.1H241.7c-10.4,0-14.2,3.3-18.7,7.4
 			L113.6,309.2"/>
 	</g>
 	<g id="InstallProcedures_Stops_1_">
-		<line class="st4 st14" x1="182.1" y1="253.9" x2="175.5" y2="247.3" onclick="ShowPopup(4);"/>
-		<line class="st4 st14" x1="229.7" y1="182.7" x2="229.7" y2="194.6" onclick="ShowPopup(5);"/>
-		<line class="st4 st14" x1="308.2" y1="203.3" x2="308.2" y2="192.4" onclick="ShowPopup(6);"/>
-		<line class="st4 st14" x1="401.6" y1="182.8" x2="401.6" y2="192.4" onclick="ShowPopup(7);"/>
-		<line class="st4 st14" x1="581.8" y1="130.4" x2="575.3" y2="123.9" onclick="ShowPopup(8);"/>
+		<line class="st4 st14" x1="182.1" y1="253.9" x2="175.5" y2="247.3" onclick="ShowPopup(4)"/>
+		<line class="st4 st14" x1="229.7" y1="182.7" x2="229.7" y2="194.6" onclick="ShowPopup(5)"/>
+		<line class="st4 st14" x1="308.2" y1="203.3" x2="308.2" y2="192.4" onclick="ShowPopup(6)"/>
+		<line class="st4 st14" x1="401.6" y1="182.8" x2="401.6" y2="192.4" onclick="ShowPopup(7)"/>
+		<line class="st4 st14" x1="581.8" y1="130.4" x2="575.3" y2="123.9" onclick="ShowPopup(8)"/>
 	</g>
 	<g id="AccessProcedures_1_">
 		<line class="st5" x1="385.9" y1="314.6" x2="113.8" y2="314.6" />
@@ -955,10 +956,10 @@
 		<path class="st5" d="M408.1,306.4c-4.8,5.7-9.9,8.2-22.2,8.2"/>
 	</g>
 	<g id="AccessProcedures_Stops_1_">
-		<line class="st5 st14" x1="188.7" y1="314.6" x2="188.7" y2="324.7" onclick="ShowPopup(9);"/>
-		<line class="st5 st14" x1="369.1" y1="314.6" x2="369.1" y2="324.7" onclick="ShowPopup(9);"/>
-		<line class="st5 st14" x1="460.9" y1="256.5" x2="469.3" y2="264.8" onclick="ShowPopup(9);"/>
-		<line class="st5 st14" x1="679.5" y1="198.6" x2="671.6" y2="190.6" onclick="ShowPopup(9);"/>
+		<line class="st5 st14" x1="188.7" y1="314.6" x2="188.7" y2="324.7" onclick="ShowPopup(9)"/>
+		<line class="st5 st14" x1="369.1" y1="314.6" x2="369.1" y2="324.7" onclick="ShowPopup(9)"/>
+		<line class="st5 st14" x1="460.9" y1="256.5" x2="469.3" y2="264.8" onclick="ShowPopup(9)"/>
+		<line class="st5 st14" x1="679.5" y1="198.6" x2="671.6" y2="190.6" onclick="ShowPopup(9)"/>
 	</g>
 	<g id="Delivery_Procedures_1_">
 		<path class="st6" d="M800.9,68.7H241.7c-9.8,0-12.4,1.7-17.6,7.7L121.6,178.9c-4.3,3.5-7.7,9.1-7.7,20.4v115.2"/>
@@ -970,49 +971,49 @@
 	<g id="InterchangeStops">
 		<circle id="ContractSignedCircle" class="st8" cx="113.6" cy="314.6" r="13.4"
 			onclick="ShowPopup(3)"
-			onmouseover="evt.target.setAttribute('r', '18');" onmouseout="evt.target.setAttribute('r', '13.4');"/>
+			onmouseover="evt.target.setAttribute('r', '18')" onmouseout="evt.target.setAttribute('r', '13.4')"/>
 		<circle id="AccessIDRequirementsCircle" class="st8" cx="520.5" cy="192.7" r="9.2"
-			onmouseover="evt.target.setAttribute('r', '12.7');" onmouseout="evt.target.setAttribute('r', '9.2');"
+			onmouseover="evt.target.setAttribute('r', '12.7')" onmouseout="evt.target.setAttribute('r', '9.2')"
 				onclick="ShowPopup(12)"/>
 		<circle id="ArkDataCentresCircle" class="st8" cx="1024.2" cy="192.7" r="9.2"
-			onmouseover="evt.target.setAttribute('r', '12.7');" onmouseout="evt.target.setAttribute('r', '9.2');"
-				 onclick="ShowPopup(16);"/>
+			onmouseover="evt.target.setAttribute('r', '12.7')" onmouseout="evt.target.setAttribute('r', '9.2')"
+				 onclick="ShowPopup(16)"/>
 		<circle id="BTArkDataCentresCircle" class="st8" cx="793.4" cy="73.2" r="13.4"
-			onmouseover="evt.target.setAttribute('r', '18');" onmouseout="evt.target.setAttribute('r', '13.4');"
+			onmouseover="evt.target.setAttribute('r', '18')" onmouseout="evt.target.setAttribute('r', '13.4')"
 			onclick="ShowPopup(2)"/>
 	</g>
 </g>
 <g id="Names">
-	<text transform="matrix(1 0 0 1 30.7336 310.075)" class="st9"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(3);">Contract </tspan><tspan x="17.7" y="18" class="st10 st11 st12"
-		onclick="ShowPopup(3);">Signed </tspan></text>
-	<text transform="matrix(1 0 0 1 151.8397 339.1626)" class="st9"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(9);">White List</tspan><tspan x="-8.1" y="18" class="st10 st11 st12" onclick="ShowPopup(9);">Management</tspan></text>
-	<text transform="matrix(1 0 0 1 470.2537 278.2809)" class="st9" onclick="ShowPopup(11);"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(11);">Book </tspan><tspan x="0" y="18" class="st10 st11 st12" onclick="ShowPopup(11);">Meeting Rooms</tspan></text>
-	<text transform="matrix(1 0 0 1 351.9503 339.1618)" class="st9" onclick="ShowPopup(10);"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(10);">Book </tspan><tspan x="-30.7" y="18" class="st10 st11 st12" onclick="ShowPopup(10);">Visitor Access</tspan></text>
-	<text transform="matrix(1 0 0 1 351.7195 160.1782)" class="st9" onclick="ShowPopup(7);"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(7);">Cabling in and</tspan>
+	<text transform="matrix(1 0 0 1 30.7336 310.075)" class="st9" onclick="ShowPopup(3)"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(3)">Contract </tspan><tspan x="17.7" y="18" class="st10 st11 st12"
+		onclick="ShowPopup(3)">Signed </tspan></text>
+	<text transform="matrix(1 0 0 1 151.8397 339.1626)" class="st9" onclick="ShowPopup(9)"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(9)">White List</tspan><tspan x="-8.1" y="18" class="st10 st11 st12" onclick="ShowPopup(9)">Management</tspan></text>
+	<text transform="matrix(1 0 0 1 470.2537 278.2809)" class="st9" onclick="ShowPopup(11)"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(11)">Book </tspan><tspan x="0" y="18" class="st10 st11 st12" onclick="ShowPopup(11)">Meeting Rooms</tspan></text>
+	<text transform="matrix(1 0 0 1 351.9503 339.1618)" class="st9" onclick="ShowPopup(10)"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(10)">Book </tspan><tspan x="-30.7" y="18" class="st10 st11 st12" onclick="ShowPopup(10)">Visitor Access</tspan></text>
+	<text transform="matrix(1 0 0 1 351.7195 160.1782)" class="st9" onclick="ShowPopup(7)"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(7);">Cabling in and</tspan>
 	<tspan x="0" y="18" class="st10 st11 st12" onclick="ShowPopup(7);">between Racks</tspan></text>
 	<text transform="matrix(1 0 0 1 351.7193 51.4117)" class="st10 st11 st12 st9 "
-		  onclick="ShowPopup(0);">Book Storage</text>
+		  onclick="ShowPopup(0)">Book Storage</text>
 	<text transform="matrix(1 0 0 1 781.621 34.4917)" class="st9"
-		  onclick="ShowPopup(2);"><tspan x="0" y="0" class="st10 st11 st12"
-		  onclick="ShowPopup(2);">BT</tspan>
+		  onclick="ShowPopup(2)"><tspan x="0" y="0" class="st10 st11 st12"
+		  onclick="ShowPopup(2)">BT</tspan>
 	<tspan x="-48" y="18" class="st10 st11 st12"
-		  onclick="ShowPopup(2);">Ark Data Centres</tspan></text>
+		  onclick="ShowPopup(2)">Ark Data Centres</tspan></text>
 	<text transform="matrix(1 0 0 1 437.0984 101.4849)" class="st9" onclick="ShowPopup(8)"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(8)">Cross Connects and</tspan><tspan x="-35.4" y="18" class="st10 st11 st12" onclick="ShowPopup(8)">Access to other Services</tspan></text>
-	<text transform="matrix(1 0 0 1 790.152 206.982)" class="st9" onclick="ShowPopup(15);"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(15);">Remote Hands</tspan><tspan x="46.9" y="18" class="st10 st11 st12" onclick="ShowPopup(15);">Services</tspan></text>
-	<text transform="matrix(1 0 0 1 208.1211 158.0474)" class="st9"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(5);">Install</tspan><tspan x="-27.8" y="18" class="st10 st11 st12" onclick="ShowPopup(5);">Tap-Off / PDU</tspan></text>
-	<text transform="matrix(1 0 0 1 285.5979 215.1577)" class="st9"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(6);">Install</tspan><tspan x="-40.6" y="18" class="st10 st11 st12" onclick="ShowPopup(6);">Active Equipment</tspan></text>
+	<text transform="matrix(1 0 0 1 790.152 206.982)" class="st9" onclick="ShowPopup(15)"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(15)">Remote Hands</tspan><tspan x="46.9" y="18" class="st10 st11 st12" onclick="ShowPopup(15)">Services</tspan></text>
+	<text transform="matrix(1 0 0 1 208.1211 158.0474)" class="st9" onclick="ShowPopup(5)"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(5)">Install</tspan><tspan x="-27.8" y="18" class="st10 st11 st12" onclick="ShowPopup(5)">Tap-Off / PDU</tspan></text>
+	<text transform="matrix(1 0 0 1 285.5979 215.1577)" class="st9" onclick="ShowPopup(6)"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(6)">Install</tspan><tspan x="-40.6" y="18" class="st10 st11 st12" onclick="ShowPopup(6)">Active Equipment</tspan></text>
 	<text transform="matrix(1 0 0 1 54.13 117.4048)" class="st10 st11 st9"
 		  onclick="ShowPopup(1)">Book Deliveries</text>
 	<text transform="matrix(1 0 0 1 184.2611 264.5112)" class="st10 st11 st9"
-		  onclick="ShowPopup(4);">Install Racks</text>
-	<text transform="matrix(1 0 0 1 677.7919 212.2837)" class="st10 st11 st9" onclick="ShowPopup(13);">Client Rooms</text>
-	<text transform="matrix(1 0 0 1 818.9325 301.2419)" class="" onclick="ShowPopup(18);"> <tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(18);">Cody Park</tspan>
-	<tspan x="-20" y="18" class="st10 st11 st12" onclick="ShowPopup(18);">Farnborough</tspan></text>
-	<text transform="matrix(1 0 0 1 1146.327 47.5737)" class="st9" onclick="ShowPopup(17);"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(17);">Spring Park</tspan>
-	<tspan x="0" y="18" class="st10 st11 st12" onclick="ShowPopup(17);">Corsham</tspan></text>
-	<text transform="matrix(1 0 0 1 916.668 54.4614)" class="st9" onclick="ShowPopup(14);"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(14);">Security and </tspan><tspan x="0" y="18" class="st10 st11 st12" onclick="ShowPopup(14);">Monitoring</tspan></text>
-	<text transform="matrix(1 0 0 1 1033.3485 212.7798)" class="st10 st11 st9" onclick="ShowPopup(16);">Ark Data Centres</text>
-	<text transform="matrix(1 0 0 1 532.3597 210.1523)" class="st9" onclick="ShowPopup(12);"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(12);">Access</tspan><tspan x="0" y="18" class="st10 st11 st12" onclick="ShowPopup(12);">ID Requirements</tspan></text>
+		  onclick="ShowPopup(4)">Install Racks</text>
+	<text transform="matrix(1 0 0 1 677.7919 212.2837)" class="st10 st11 st9" onclick="ShowPopup(13)">Client Rooms</text>
+	<text transform="matrix(1 0 0 1 818.9325 301.2419)" class="" onclick="ShowPopup(18)"> <tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(18)">Cody Park</tspan>
+	<tspan x="-20" y="18" class="st10 st11 st12" onclick="ShowPopup(18)">Farnborough</tspan></text>
+	<text transform="matrix(1 0 0 1 1146.327 47.5737)" class="st9" onclick="ShowPopup(17)"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(17)">Spring Park</tspan>
+	<tspan x="0" y="18" class="st10 st11 st12" onclick="ShowPopup(17)">Corsham</tspan></text>
+	<text transform="matrix(1 0 0 1 916.668 54.4614)" class="st9" onclick="ShowPopup(14)"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(14)">Security and </tspan><tspan x="0" y="18" class="st10 st11 st12" onclick="ShowPopup(14)">Monitoring</tspan></text>
+	<text transform="matrix(1 0 0 1 1033.3485 212.7798)" class="st10 st11 st9" onclick="ShowPopup(16)">Ark Data Centres</text>
+	<text transform="matrix(1 0 0 1 532.3597 210.1523)" class="st9" onclick="ShowPopup(12)"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(12)">Access</tspan><tspan x="0" y="18" class="st10 st11 st12" onclick="ShowPopup(12)">ID Requirements</tspan></text>
 </g>
 <g id="Key">
 	<line class="st6" x1="1044.8" y1="352.5" x2="1134.6" y2="352.5" onclick="GreyOutBut(st6Array,st1Array,st2Array,st4Array,st5Array)"
@@ -1054,7 +1055,8 @@
 <!-- This is the SVG I had to create to make everything responsive -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 viewBox="0 0 540.3 1239.6" style="enable-background:new 0 0 540.3 1239.6;" xml:space="preserve">	
-<script> // JavaScripts are to be incorporated in the SVG bit of the file, in order to access it easily from the SVG //
+<script type="text/javascript"> /* JavaScripts are to be incorporated in the SVG bit of the file, in order to access it easily from the SVG */
+ <![CDATA[
 	var PopupArrayR = document.getElementsByClassName("Popup");
 	var st6ArrayR = document.getElementsByClassName("st6r");
 	var st5ArrayR = document.getElementsByClassName("st5r");
@@ -1139,6 +1141,7 @@
 			}
 		}
 	}
+]]>
 </script>
 	<g id="BackgroundBoxR">
 		<rect onclick="ResetStatusToPopupsR(); UngreyAllR();"; x="41.1" class="st0r" width="480" height="900"/>
