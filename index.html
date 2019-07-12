@@ -420,8 +420,14 @@
 	.st13{fill:none;stroke:#54B3E9;stroke-miterlimit:10;}
 
 	/* Very basic Responsive CSS - I can't rework everything for mobile for the time being */
-@media (min-width: 420px) and (max-width: 920px){
+@media (min-width: 420px) and (max-width: 919px){
 
+	body {
+		font-family:'P22UndergroundMedium','Noto Sans HK', 'Raleway', sans-serif;
+		font-weight:bold;
+		font-size: 20px;
+	}
+	
 	.smallViewport {visibility: visible!important; z-index: 275; display:block!important;}
 	.maximumViewport {visibility: hidden!important; z-index: 250; display:none!important;}
 	.tooSmallScreen{display:none!important;}
@@ -436,7 +442,6 @@
 	.st6r{fill:#8A9455;stroke:#8A9455;stroke-width:7;stroke-miterlimit:10;}
 	.st7r{fill:#FFFFFF;stroke:#010101;stroke-width:4;stroke-miterlimit:10;}
 	.st8r{fill:#23438F;}
-	.st9r{font-family:'P22UndergroundHeavy';}
 	.st10r{font-size:20px;}
 	.st11r{enable-background:new;}
 	.st17r{font-size:20px;}
@@ -645,10 +650,9 @@
 		bottom:inherit;
 		right:inherit;
 	}
-
 }
 
-@media (min-width : 918px ){
+@media (min-width : 920px ){
 	.smallViewport {visibility: hidden!important; z-index: 250; display:none!important;}
 	.maximumViewport {visibility: visible!important; z-index: 275; display:block!important;}
 	.tooSmallScreen{display:none!important;}
@@ -656,38 +660,30 @@
 }
 	
 @media (max-width : 419px ){
-
 	.tooSmallScreen{display:block!important;}
 	.smallViewport{display:none!important;}
 	.maximumViewport{display:none!important;}
 	.HowToUse{display:none!important;}
-	
 }
 </style>
-
 </head>
-
 <body>
 		<!-- This is the HTML for all the popups - again there must be a smarter way to deal with this. -->
 	<span id="Overlay">
-
 	<span class="Popup BookStorage">
 		<div class="PopupTitle">Book Storage</div>
 			<div class="PopupContent">Book through <a href="mailto:ah.support@bt.com">AH.Support@bt.com</a>. A minimum of 24 hours advanced notification is required. Secure cages are offered on a first come first served basis. <br>
 			For more details, see <em>“BT Telehousing Customer Welcome Pack ARK”</em>, <strong>10. Deliveries</strong></div>
 		</span>
-
 	<span class="Popup BookDeliveries">
 		<div class="PopupTitle">Book Deliveries</div>
 			<div class="PopupContent">Book through <a href="mailto:ah.support@bt.com">AH.Support@bt.com</a>. A minimum of 48 hours of advanced notification is required. One of your representatives must be present to receive the goods, or a Remote Hands request must be submitted in advance. <br>
 			For more details, see <em>“BT Telehousing Customer Welcome Pack ARK”</em>, <strong>5. Deliveries</strong></div>
 		</span>
-
 	<span class="Popup BTArkDataCentres">
 		<div class="PopupTitle">BT - Ark Data Centres</div>
 			<div class="PopupContent">Ark sites comprise part of the BT Strategic Data Centre Portfolio. Namely, Ark Cody Park, in Farnborough and Ark Spring Park, in Corsham.</div>
 	</span>
-
 		<span class="Popup ContractSigned">
 		<div class="PopupTitle">Contract Signed</div>
 			<div class="PopupContent">
@@ -695,31 +691,26 @@
 				Click on every stop to learn more about each part of the process
 			</div>
 		</span>
-
 	<span class="Popup InstallRacks">
 		<div class="PopupTitle">Install Racks</div>
 			<div class="PopupContent">
 					Once your order has been delivered your racks will be available for you to access and begin your installation. If you have additional fit-out requirements please contact your BT Account Manager
 			</div>
 		</span>
-
 	<span class="Popup InstallTapoff">
 		<div class="PopupTitle">Install TapOff / PDU</div>
 			<div class="PopupContent">
 					Once your order has been delivered your racks will be available for you to access and begin your installation. If you have additional fit-out requirements please contact your BT Account Manager
 			</div>
 		</span>
-
 		<span class="Popup InstallActiveEquipment">
 		<div class="PopupTitle">Install Active Equipment</div>
 			<div class="PopupContent">
 					Your data room space relies upon direct and indirect cool air supplied to the front of your racks. Therefore, you must ensure that all in-rack blanking is fitted so that no gaps are present.
 					When installing active equipment, you must also ensure that all devices are installed so that front-to-back cooling is maintained.
 					If you need any support or guidance with blanking requirements, please contact BT Service Desk.
-
 			</div>
 		</span>
-
 		<span class="Popup CablingBetween">
 		<div class="PopupTitle">Cabling in and between Racks</div>
 			<div class="PopupContent">
@@ -728,22 +719,19 @@
 					Please note a Declaration of Performance “DOP” must be presented to the data centre when you are delivering and installing your cabling
 			</div>
 		</span>
-
 		<span class="Popup CrossConnects">
 		<div class="PopupTitle">Cross Connects <br/> and other Services</div>
 			<div class="PopupContent">
 				Cross Connects prices are determined on an Order by Order basis dependent on the scope of your requirements. Please contact your BT Account Manager for further details
 			</div>
 		</span>
-
-				<span class="Popup WhiteListManagement">
+		<span class="Popup WhiteListManagement">
 		<div class="PopupTitle">White List Management</div>
 			<div class="PopupContent">
 				Your access to the data centre and ability to request deliveries and additional visitors is managed and maintained via your BT Customer Whitelist. <br/><br/>The Whitelist is created and managed by you and the BT Service Desk via the BT Whitelist Request Form which can be found in the Client Welcome Pack. This form needs to be completed and submitted to the BT Service Desk prior to the hosting environment being made available to you.
 			</div>
 		</span>
-
-				<span class="Popup BookVisitorAccess">
+		<span class="Popup BookVisitorAccess">
 		<div class="PopupTitle">Book Visitor Access</div>
 			<div class="PopupContent">
 				If you require someone who is not on your Whitelist to access the Ark Data Centres facilities, you will need to submit a Visitor Authorisation Form to the BT Service Desk. For scheduled visitor requests a minimum of 48 hours of advanced notification is required.
@@ -751,14 +739,12 @@
 				For more details, see <em>“BT Telehousing Customer Welcome Pack ARK”</em>, <strong>	3.2 Access Requests</strong>
 			</div>
 		</span>
-
 		<span class="Popup BookMeetingRooms">
 			<div class="PopupTitle">Book Meeting Rooms</div>
 				<div class="PopupContent">
 					Ark provide a number of meeting rooms at both the Cody and Spring Park Campuses. Please book your meeting room with the BT Service Desk in advance of your visit.
 				</div>
 		</span>
-
 		<span class="Popup AccessIDRequirements">
 			<div class="PopupTitle">Access ID Requirements</div>
 				<div class="PopupContent">
@@ -766,48 +752,40 @@
 					There are no exceptions to this rule. Failure to produce a valid photo-id from the list above will result in refusal of access to the Data Centre.
 				</div>
 		</span>
-
-				<span class="Popup ClientRooms">
+		<span class="Popup ClientRooms">
 			<div class="PopupTitle">Client Rooms</div>
 				<div class="PopupContent">
 					A small number of Shared Client Rooms are available to BT, please contact the BT Support Desk for more details.
 				</div>
 		</span>
-
 		<span class="Popup SecurityAndMonitoring">
 		<div class="PopupTitle">Security and Monitoring</div>
 			<div class="PopupContent">All Security, Power, and Environmental monitoring are managed by BT – you can just sit back and relax</div>
 		</span>
-
-				<span class="Popup RemoteHands">
+		<span class="Popup RemoteHands">
 		<div class="PopupTitle">Remote Hands Services</div>
 			<div class="PopupContent">Book through <a href="mailto:ah.support@bt.com">AH.Support@bt.com</a>. A minimum of 48 hours of advanced notification is required for Remote Hands services. <br>
 			For more details, see <em>“BT Telehousing Customer Welcome Pack ARK”</em>, <strong>7. Remote Hands</strong></div>
 		</span>
-
 		<span class="Popup ArkDataCentres">
 		<div class="PopupTitle">Ark Data Centres</div>
 			<div class="PopupContent">Ark was established in 2005 to offer secure and efficient data centres within purpose-built campuses. With multi-million-pound investment backing and a management committed to providing the scale and flexibility for providing data centre solutions, from the ground up, that are cost-effective, risk averse and aligned to our clients’ business strategies at every step. </div>
 		</span>
-
 		<span class="Popup SpringPark">
 		<div class="PopupTitle">SPRING PARK</div>
 			<div class="PopupContent">
 					Ark Data Centres<br/> Spring Park<br/> Corsham<br/> Wiltshire<br/>SN13 9GB
 			</div>
 		</span>
-
 		<span class="Popup CodyPark">
 		<div class="PopupTitle">CODY PARK</div>
 			<div class="PopupContent">
 					Ark Data Centres<br/> Cody Park<br/> Farnborough<br/> Hampshire<br/>GU14 0LH
 			</div>
 		</span>
-
 	</span>
 <div class="everything" >
-
-	<!-- The following code is the SVG generated by Adobe Illustrator and heavily modified by me - Max Pace 26 Jun 2019 */ -->
+<!-- The following code is the SVG generated by Adobe Illustrator and heavily modified by me - Max Pace 26 Jun 2019 */ -->
 <div class="maximumViewport">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1262.5 470.3" style="enable-background:new 0 0 1262.5 470.3;" xml:space="preserve">
@@ -865,6 +843,7 @@
 	}
 
 	function GreyOutBut(notGrey,line1,line2,line3,line4){
+		UngreyAll();
 		for (i = 0; i < notGrey.length; i++){
 			notGrey[i].style.strokeWidth = "6";
 		}
@@ -896,8 +875,30 @@
 			}
 		}
 	}
-]]></script>
-<script type="text/javascript"> <![CDATA[
+
+	function ShowOffCicle(tInterval){
+		setTimeout(function(){
+			GreyOutBut(st5Array,st1Array,st2Array,st6Array,st4Array);
+			console.log("st5");
+		},0001);
+		setTimeout(function(){
+			GreyOutBut(st6Array,st1Array,st4Array,st2Array,st5Array);
+		},0001+(tInterval));
+		setTimeout(function(){
+			GreyOutBut(st4Array,st1Array,st2Array,st6Array,st5Array);
+		},0001+(tInterval*2));
+		setTimeout(function(){
+			GreyOutBut(st1Array,st4Array,st2Array,st6Array,st5Array);
+		},0001+(tInterval*3));
+		setTimeout(function(){
+			GreyOutBut(st2Array,st1Array,st5Array,st6Array,st4Array);
+		},0001+(tInterval*4));
+		setTimeout(function (){
+			UngreyAll(); 
+			UngreyAllR();
+		},0001+(tInterval*5));
+	}
+		
 	function RemoveClass(classToRemove){
 		var arrayOfClassToRemove = document.getElementsByClassName(classToRemove);
 		for (i = 0; i < arrayOfClassToRemove.length; i++){
@@ -1016,6 +1017,8 @@
 	<text transform="matrix(1 0 0 1 532.3597 210.1523)" class="st9" onclick="ShowPopup(12)"><tspan x="0" y="0" class="st10 st11 st12" onclick="ShowPopup(12)">Access</tspan><tspan x="0" y="18" class="st10 st11 st12" onclick="ShowPopup(12)">ID Requirements</tspan></text>
 </g>
 <g id="Key">
+	<line class="st5" x1="1044.8" y1="322.4" x2="1134.6" y2="322.4" onclick="GreyOutBut(st5Array,st1Array,st2Array,st4Array,st6Array)"
+		  onmouseout="setTimeout(UngreyAll,500)" />
 	<line class="st6" x1="1044.8" y1="352.5" x2="1134.6" y2="352.5" onclick="GreyOutBut(st6Array,st1Array,st2Array,st4Array,st5Array)"
 		  onmouseout="setTimeout(UngreyAll,500)" />
 	<line class="st4" x1="1044.8" y1="380.6" x2="1134.6" y2="380.6" onclick="GreyOutBut(st4Array,st1Array,st2Array,st5Array,st6Array)"
@@ -1024,11 +1027,8 @@
 		  onmouseout="setTimeout(UngreyAll,500)" />
 	<line class="st2" x1="1044.8" y1="437.4" x2="1134.6" y2="437.4" onclick="GreyOutBut(st2Array,st1Array,st5Array,st4Array,st6Array)"
 		  onmouseout="setTimeout(UngreyAll,500)" />
-	<line class="st5" x1="1044.8" y1="322.4" x2="1134.6" y2="322.4" onclick="GreyOutBut(st5Array,st1Array,st2Array,st4Array,st6Array)"
-		  onmouseout="setTimeout(UngreyAll,500)" />
-
 	<g>
-		<text transform="matrix(1 0 0 1 1043.8494 302.7371)" class="st10 st11 st12">Key to lines</text>
+		<text transform="matrix(1 0 0 1 1043.8494 302.7371)" class="st10 st11 st12" onclick="ShowOffCicle(1250)">Key to lines</text>
 	</g>
 	<g>
 		<text transform="matrix(1 0 0 1 1164.8594 327.1223)" class="st10 st11 st12" onmouseover="GreyOutBut(st5Array,st1Array,st2Array,st4Array,st6Array)" onmouseout="setTimeout(UngreyAll,500)" >Access</text>
@@ -1064,11 +1064,6 @@
 	var st3ArrayR = document.getElementsByClassName("st3r");
 	var st2ArrayR = document.getElementsByClassName("st2r");
 	var st1ArrayR = document.getElementsByClassName("st1r");
-
-	function ShowPopupR(arrayPos){
-		ResetStatusToPopupsR();
-		PopupArrayR[arrayPos].style.animation = "appear 1s forwards";
-	}
 
 	function ResetStatusToPopupsR(){
 		for (i = 0; i < PopupArrayR.length; ++i) {
@@ -1108,6 +1103,7 @@
 	}
 
 	function GreyOutButR(notGrey,line1,line2,line3,line4){
+		UngreyAllR ();
 		for (i = 0; i < notGrey.length; i++){
 			notGrey[i].style.strokeWidth = "9";
 		}
@@ -1149,38 +1145,38 @@
 	<g id="MainR">
 		<g id="DeliveryR">
 			<line class="st1r" x1="281.1" y1="63.8" x2="281.1" y2="652"/>
-			<line class="st1r" x1="281.1" y1="254.3" x2="264.4" y2="254.3" onclick="ShowPopupR(1)"/>
-			<line class="st1r" x1="297.7" y1="500.8" x2="281.1" y2="500.8" onclick="ShowPopupR(0)"/>
+			<line class="st1r" x1="281.1" y1="254.3" x2="264.4" y2="254.3" onclick="ShowPopup(1)"/>
+			<line class="st1r" x1="297.7" y1="500.8" x2="281.1" y2="500.8" onclick="ShowPopup(0)"/>
 		</g>
 		<g id="AccessR">
 			<path class="st2r" d="M281.1,652L163.9,534.9c-2.8-2.9-5.4-9.4-5.4-14.6V195.6c0-5.2,2.5-11.7,5.4-14.6L281.1,63.8"/>
-			<line class="st2r" x1="203.3" y1="141.6" x2="191.5" y2="129.8" onclick="ShowPopupR(9)"/>
-			<line class="st2r" x1="158.5" y1="254.3" x2="141.8" y2="254.3" onclick="ShowPopupR(10)"/>
-			<line class="st2r" x1="158.5" y1="376.6" x2="141.8" y2="376.6" onclick="ShowPopupR(11)"/>
-			<line class="st2r" x1="158.5" y1="500.8" x2="141.8" y2="500.8"  onclick="ShowPopupR(12)"/>
-			<line class="st2r" x1="209.6" y1="580.7" x2="197.8" y2="592.5" onclick="ShowPopupR(13)"/>
+			<line class="st2r" x1="203.3" y1="141.6" x2="191.5" y2="129.8" onclick="ShowPopup(9)"/>
+			<line class="st2r" x1="158.5" y1="254.3" x2="141.8" y2="254.3" onclick="ShowPopup(10)"/>
+			<line class="st2r" x1="158.5" y1="376.6" x2="141.8" y2="376.6" onclick="ShowPopup(11)"/>
+			<line class="st2r" x1="158.5" y1="500.8" x2="141.8" y2="500.8"  onclick="ShowPopup(12)"/>
+			<line class="st2r" x1="209.6" y1="580.7" x2="197.8" y2="592.5" onclick="ShowPopup(13)"/>
 		</g>
 		<g id="InstallationR">
 			<path class="st3r" d="M281.1,652l117.2-117.2c2.8-2.9,5.4-9.4,5.4-14.6V195.6c0-5.2-2.5-11.7-5.4-14.6L281.1,63.8"/>
-			<line class="st3r" x1="359.3" y1="142.5" x2="371.1" y2="130.7" onclick="ShowPopupR(4)"/>
-			<line class="st3r" x1="404.1" y1="255.2" x2="420.8" y2="255.2" onclick="ShowPopupR(5)"/>
-			<line class="st3r" x1="404.1" y1="377.4" x2="420.8" y2="377.4" onclick="ShowPopupR(6)"/>
-			<line class="st3r" x1="404.1" y1="501.7" x2="420.8" y2="501.7" onclick="ShowPopupR(7)"/>
-			<line class="st3r" x1="353.1" y1="581.5" x2="364.9" y2="593.3" onclick="ShowPopupR(8)"/>
+			<line class="st3r" x1="359.3" y1="142.5" x2="371.1" y2="130.7" onclick="ShowPopup(4)"/>
+			<line class="st3r" x1="404.1" y1="255.2" x2="420.8" y2="255.2" onclick="ShowPopup(5)"/>
+			<line class="st3r" x1="404.1" y1="377.4" x2="420.8" y2="377.4" onclick="ShowPopup(6)"/>
+			<line class="st3r" x1="404.1" y1="501.7" x2="420.8" y2="501.7" onclick="ShowPopup(7)"/>
+			<line class="st3r" x1="353.1" y1="581.5" x2="364.9" y2="593.3" onclick="ShowPopup(8)"/>
 		</g>
 		<g id="OtherR">
 			<line class="st4r" x1="281.1" y1="652" x2="281.1" y2="896.4"/>
-			<line class="st4r" x1="297.7" y1="720.7" x2="281.1" y2="720.7" onclick="ShowPopupR(14)"/>
-			<line class="st4r" x1="281.1" y1="842.9" x2="264.4" y2="842.9" onclick="ShowPopupR(15)"/>
+			<line class="st4r" x1="297.7" y1="720.7" x2="281.1" y2="720.7" onclick="ShowPopup(14)"/>
+			<line class="st4r" x1="281.1" y1="842.9" x2="264.4" y2="842.9" onclick="ShowPopup(15)"/>
 		</g>
 		<g id="SitesR">
 			<line class="st5r" x1="281.1" y1="896.4" x2="186.6" y2="990.8"/>
 			<line class="st5r" x1="375.5" y1="990.8" x2="281.1" y2="896.4"/>
 			<g id="Ark-DCs_Stops_2_R">
-				<circle class="st6r" cx="185.8" cy="990.4" r="4.2" onclick="ShowPopupR(18)"/>
+				<circle class="st6r" cx="185.8" cy="990.4" r="4.2" onclick="ShowPopup(18)"/>
 			</g>
 			<g id="Ark-DCs_Stops_3_R">
-				<circle class="st6r" cx="375" cy="990.4" r="4.2" onclick="ShowPopupR(17)"/>
+				<circle class="st6r" cx="375" cy="990.4" r="4.2" onclick="ShowPopup(17)"/>
 			</g>
 		</g>
 		<g id="InterchangeStopsR">
@@ -1190,85 +1186,85 @@
 		</g>
 	</g>
 	<g id="NamesR">
-		<text transform="matrix(1 0 0 1 202.274 37.1551)" class="st8r st9r st10r" onclick="ShowPopupR(3)">Contract Signed </text>
+		<text transform="matrix(1 0 0 1 202.274 37.1551)" class="st8r st9r st10r" onclick="ShowPopup(3)">Contract Signed </text>
 		<g>
-			<text transform="matrix(1 0 0 1 423.8748 472.0315)" class="st11r" onclick="ShowPopupR(7)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(7)">Cabling </tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopupR(7)">in and </tspan><tspan x="0" y="48" class="st8r st9r st10r" onclick="ShowPopupR(7)">between </tspan><tspan x="0" y="72" class="st8r st9r st10r" onclick="ShowPopupR(7)">racks</tspan></text>
+			<text transform="matrix(1 0 0 1 423.8748 472.0315)" class="st11r" onclick="ShowPopup(7)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(7)">Cabling </tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopup(7)">in and </tspan><tspan x="0" y="48" class="st8r st9r st10r" onclick="ShowPopup(7)">between </tspan><tspan x="0" y="72" class="st8r st9r st10r" onclick="ShowPopup(7)">racks</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 233.6267 655.3235)" class="st11r" onclick="ShowPopupR(2)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(2)">BT</tspan><tspan x="-140.8" y="24" class="st8r st9r st10r" onclick="ShowPopupR(2)">Ark Data Centres</tspan></text>
+			<text transform="matrix(1 0 0 1 233.6267 655.3235)" class="st11r" onclick="ShowPopup(2)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(2)">BT</tspan><tspan x="-140.8" y="24" class="st8r st9r st10r" onclick="ShowPopup(2)">Ark Data Centres</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 365.2441 614.2311)" onclick="ShowPopupR(8)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(8)">Cross Connects</tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopupR(8)">and Other</tspan><tspan x="0" y="48" class="st8r st9r st10r" onclick="ShowPopupR(8)">Services</tspan></text>
+			<text transform="matrix(1 0 0 1 365.2441 614.2311)" onclick="ShowPopup(8)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(8)">Cross Connects</tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopup(8)">and Other</tspan><tspan x="0" y="48" class="st8r st9r st10r" onclick="ShowPopup(8)">Services</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 109.3684 842.9121)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(15)">Remote Hands</tspan><tspan x="62.6" y="24" class="st8r st9r st10r" onclick="ShowPopupR(15)">services</tspan></text>
+			<text transform="matrix(1 0 0 1 109.3684 842.9121)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(15)">Remote Hands</tspan><tspan x="62.6" y="24" class="st8r st9r st10r" onclick="ShowPopup(15)">services</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 423.8746 237.3093)" class="st11r" onclick="ShowPopupR(5)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(5)">Install</tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopupR(5)">Tap-Off</tspan><tspan x="0" y="48" class="st8r st9r st10r" onclick="ShowPopupR(5)">PDU</tspan></text>
+			<text transform="matrix(1 0 0 1 423.8746 237.3093)" class="st11r" onclick="ShowPopup(5)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(5)">Install</tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopup(5)">Tap-Off</tspan><tspan x="0" y="48" class="st8r st9r st10r" onclick="ShowPopup(5)">PDU</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 423.8747 360.1351)" class="st11r" onclick="ShowPopupR(6)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(6)">Install</tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopupR(6)">Active</tspan><tspan x="0" y="48" class="st8r st9r st10r" onclick="ShowPopupR(6)">Equipment</tspan></text>
+			<text transform="matrix(1 0 0 1 423.8747 360.1351)" class="st11r" onclick="ShowPopup(6)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(6)">Install</tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopup(6)">Active</tspan><tspan x="0" y="48" class="st8r st9r st10r" onclick="ShowPopup(6)">Equipment</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 302.3377 494.6053)" class="st11r" onclick="ShowPopupR(0)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(0)">Book</tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopupR(0)">Storage</tspan></text>
+			<text transform="matrix(1 0 0 1 302.3377 494.6053)" class="st11r" onclick="ShowPopup(0)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(0)">Book</tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopup(0)">Storage</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 211.0334 248.0209)" class="st11r" onclick="ShowPopupR(1)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(1)">Book </tspan><tspan x="-27.8" y="24" class="st8r st9r st10r" onclick="ShowPopupR(1)">Delivery</tspan></text>
+			<text transform="matrix(1 0 0 1 211.0334 248.0209)" class="st11r" onclick="ShowPopup(1)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(1)">Book </tspan><tspan x="-27.8" y="24" class="st8r st9r st10r" onclick="ShowPopup(1)">Delivery</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 378.5825 115.6432)" class="st11r" onclick="ShowPopupR(4)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(4)">Install</tspan><tspan x="3.5" y="24" class="st8r st9r st10r" onclick="ShowPopupR(4)">Racks</tspan></text>
+			<text transform="matrix(1 0 0 1 378.5825 115.6432)" class="st11r" onclick="ShowPopup(4)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(4)">Install</tspan><tspan x="3.5" y="24" class="st8r st9r st10r" onclick="ShowPopup(4)">Racks</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 63.5093 604.9958)" class="st8r st9r st10r" onclick="ShowPopupR(13)">Client Rooms</text>
+			<text transform="matrix(1 0 0 1 63.5093 604.9958)" class="st8r st9r st10r" onclick="ShowPopup(13)">Client Rooms</text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 72.609 990.3931)" class="st11r" onclick="ShowPopupR(18)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(18)">Cody Park</tspan><tspan x="-24" y="24" class="st8r st9r st10r" onclick="ShowPopupR(18)">Farnborough</tspan></text>
+			<text transform="matrix(1 0 0 1 72.609 990.3931)" class="st11r" onclick="ShowPopup(18)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(18)">Cody Park</tspan><tspan x="-24" y="24" class="st8r st9r st10r" onclick="ShowPopup(18)">Farnborough</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 386.7897 990.3931)" class="st11r" onclick="ShowPopupR(17)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(17)">Spring Park</tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopupR(17)">Corsham</tspan></text>
+			<text transform="matrix(1 0 0 1 386.7897 990.3931)" class="st11r" onclick="ShowPopup(17)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(17)">Spring Park</tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopup(17)">Corsham</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 321.2597 720.6804)" onclick="ShowPopupR(14)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(14)">Security and </tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopupR(14)">Monitoring</tspan></text>
+			<text transform="matrix(1 0 0 1 321.2597 720.6804)" onclick="ShowPopup(14)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(14)">Security and </tspan><tspan x="0" y="24" class="st8r st9r st10r" onclick="ShowPopup(14)">Monitoring</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 297.7437 899.9996)" class="st8r st9r st10r" onclick="ShowPopupR(16)">Ark Data Centres</text>
+			<text transform="matrix(1 0 0 1 297.7437 899.9996)" class="st8r st9r st10r" onclick="ShowPopup(16)">Ark Data Centres</text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 85.919 115.6432)" class="st11r" onclick="ShowPopupR(9)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(9)">White List</tspan><tspan x="-21.6" y="24" class="st8r st9r st10r" onclick="ShowPopupR(9)">Management</tspan></text>
+			<text transform="matrix(1 0 0 1 85.919 115.6432)" class="st11r" onclick="ShowPopup(9)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(9)">White List</tspan><tspan x="-21.6" y="24" class="st8r st9r st10r" onclick="ShowPopup(9)">Management</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 91.324 360.1353)" class="st11r" onclick="ShowPopupR(11)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(11)">Book</tspan><tspan x="-29.6" y="24" class="st8r st9r st10r" onclick="ShowPopupR(11)">Meeting</tspan><tspan x="-18.6" y="48" class="st8r st9r st10r" onclick="ShowPopupR(11)">Rooms</tspan></text>
+			<text transform="matrix(1 0 0 1 91.324 360.1353)" class="st11r" onclick="ShowPopup(11)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(11)">Book</tspan><tspan x="-29.6" y="24" class="st8r st9r st10r" onclick="ShowPopup(11)">Meeting</tspan><tspan x="-18.6" y="48" class="st8r st9r st10r" onclick="ShowPopup(11)">Rooms</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 91.324 237.3095)" class="st11r" onclick="ShowPopupR(10)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(10)">Book</tspan><tspan x="-18" y="24" class="st8r st9r st10r" onclick="ShowPopupR(10)">Visitor</tspan><tspan x="-18.8" y="48" class="st8r st9r st10r" onclick="ShowPopupR(10)">Access</tspan></text>
+			<text transform="matrix(1 0 0 1 91.324 237.3095)" class="st11r" onclick="ShowPopup(10)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(10)">Book</tspan><tspan x="-18" y="24" class="st8r st9r st10r" onclick="ShowPopup(10)">Visitor</tspan><tspan x="-18.8" y="48" class="st8r st9r st10r" onclick="ShowPopup(10)">Access</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 41.1245 494.6057)" onclick="ShowPopupR(12)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopupR(12)">Access ID </tspan><tspan x="-37" y="24" class="st8r st9r st10r" onclick="ShowPopupR(12)">Requirements</tspan></text>
+			<text transform="matrix(1 0 0 1 41.1245 494.6057)" onclick="ShowPopup(12)"><tspan x="0" y="0" class="st8r st9r st10r" onclick="ShowPopup(12)">Access ID </tspan><tspan x="-37" y="24" class="st8r st9r st10r" onclick="ShowPopup(12)">Requirements</tspan></text>
 		</g>
 	</g>
 	<g id="KeyR">
-		<line class="st1r" x1="16.1" y1="1119.6" x2="105.9" y2="1119.6" onclick="GreyOutButR(st1ArrayR,st4ArrayR,st2ArrayR,st3ArrayR,st5ArrayR);"/>
-		<line class="st3r" x1="16.1" y1="1147.6" x2="105.9" y2="1147.6" onclick="GreyOutButR(st3ArrayR,st1ArrayR,st4ArrayR,st2ArrayR,st5ArrayR);"/>
-		<line class="st4r" x1="16.1" y1="1176" x2="105.9" y2="1176" onclick="GreyOutButR(st4ArrayR,st1ArrayR,st2ArrayR,st3ArrayR,st5ArrayR);"/>
-		<line class="st5r" x1="16.1" y1="1204.4" x2="105.9" y2="1204.4" onclick="GreyOutButR(st5ArrayR,st1ArrayR,st2ArrayR,st3ArrayR,st4ArrayR);"/>
-		<line class="st2r" x1="16.1" y1="1089.4" x2="105.9" y2="1089.4" onclick="GreyOutButR(st2ArrayR,st1ArrayR,st5ArrayR,st3ArrayR,st4ArrayR);"/>
+		<line class="st1r" x1="16.1" y1="1119.6" x2="105.9" y2="1119.6" onclick="GreyOutButR(st1ArrayR,st4ArrayR,st2ArrayR,st3ArrayR,st5ArrayR)"/>
+		<line class="st3r" x1="16.1" y1="1147.6" x2="105.9" y2="1147.6" onclick="GreyOutButR(st3ArrayR,st1ArrayR,st4ArrayR,st2ArrayR,st5ArrayR)"/>
+		<line class="st4r" x1="16.1" y1="1176" x2="105.9" y2="1176" onclick="GreyOutButR(st4ArrayR,st1ArrayR,st2ArrayR,st3ArrayR,st5ArrayR)"/>
+		<line class="st5r" x1="16.1" y1="1204.4" x2="105.9" y2="1204.4" onclick="GreyOutButR(st5ArrayR,st1ArrayR,st2ArrayR,st3ArrayR,st4ArrayR)"/>
+		<line class="st2r" x1="16.1" y1="1089.4" x2="105.9" y2="1089.4" onclick="GreyOutButR(st2ArrayR,st1ArrayR,st5ArrayR,st3ArrayR,st4ArrayR)"/>
 		<g>
 			<text transform="matrix(1 0 0 1 15.1089 1069.765)" class="st8r st9r st17r">Key to lines</text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 136.119 1094.1517)" class="st8r st9r st17r">Access</text>
+			<text transform="matrix(1 0 0 1 136.119 1094.1517)" class="st8r st9r st17r" onclick="GreyOutButR(st2ArrayR,st1ArrayR,st5ArrayR,st3ArrayR,st4ArrayR)">Access</text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 136.119 1122.6752)" class="st8r st9r st17r">Delivery</text>
+			<text transform="matrix(1 0 0 1 136.119 1122.6752)" class="st8r st9r st17r" onclick="GreyOutButR(st1ArrayR,st4ArrayR,st2ArrayR,st3ArrayR,st5ArrayR)">Delivery</text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 136.119 1151.6263)" class="st8r st9r st17r">Installation</text>
+			<text transform="matrix(1 0 0 1 136.119 1151.6263)" class="st8r st9r st17r" onclick="GreyOutButR(st3ArrayR,st1ArrayR,st4ArrayR,st2ArrayR,st5ArrayR)">Installation</text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 136.119 1179.9154)" class="st8r st9r st17r">Other</text>
+			<text transform="matrix(1 0 0 1 136.119 1179.9154)" class="st8r st9r st17r" onclick="GreyOutButR(st4ArrayR,st1ArrayR,st2ArrayR,st3ArrayR,st5ArrayR)">Other</text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 136.119 1209.2924)" class="st8r st9r st17r">Sites</text>
+			<text transform="matrix(1 0 0 1 136.119 1209.2924)" class="st8r st9r st17r" onclick="GreyOutButR(st5ArrayR,st1ArrayR,st2ArrayR,st3ArrayR,st4ArrayR)">Sites</text>
 		</g>
 		<rect x="5.8" y="1040.1" class="st18r" width="245.6" height="193.6"/>
 	</g>
@@ -1285,7 +1281,9 @@
 	</div>
 </div>
 	<!-- In order to make everything disappear, this seems the fastest way. -->
-	<script>window.onload = function(){ResetStatusToPopups(); ResetStatusToPopupsR();FirefoxChromeRemoveClassSt12();}		
+	<script>
+		var waitMS = 200;
+		window.onload = function(){ResetStatusToPopups(); ResetStatusToPopupsR();FirefoxChromeRemoveClassSt12();ShowOffCicle(waitMS); setTimeout(function (){ShowPopup(3);},waitMS*5);}		
 	</script>
 <div class="tooSmallScreen" style="display:none;">Please use a device with a higher resolution - the minimum required resolution is 420px.</div> <!-- In case the users open it in a smaller window-->
 </body>
